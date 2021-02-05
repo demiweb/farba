@@ -586,5 +586,63 @@ img.lozad {
     transform: rotate(0);
   }
 }
+@media screen and (max-width: 768px) {
+  .farba-header {
+    padding: 0;
+    height: 70px;
+    width: 100%;
+  }
+
+  .farba-header__container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .farba-header__socials {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  .farba-header__language {
+    width: auto;
+  }
+
+  .farba-header__socials ul {
+    height: 20px;
+  }
+
+  .farba-header__socials ul li {
+    padding-right: 20px;
+  }
+
+  .farba-header__socials ul li:last-child {
+    padding-left: 20px;
+  }
+
+  .farba-header__language ul {
+    height: 20px;
+  }
+
+  .farba-header__navigation {
+    top: 70px;
+    left: 0;
+  }
+
+  .farba-header__submenu > ul {
+    flex-direction: column;
+  }
+
+  .farba-header__submenu > ul > li {
+    border-right: none;
+    border-bottom: 1px solid #626262;
+  }
+
+  .farba-header__submenu > ul > li:last-child {
+    border-bottom: none;
+  }
+
+  .farba-header__menu > svg.svg-animated {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
