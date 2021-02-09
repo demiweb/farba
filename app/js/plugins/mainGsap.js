@@ -57,7 +57,7 @@ const controller = new ScrollMagic.Controller();
 let allP = [...document.querySelectorAll('main .trigger')];
 
 allP.forEach((p) => {
-    let allAnimated = [...p.querySelectorAll('p')];
+    let allAnimated = [...p.querySelectorAll('table')];
     allAnimated.forEach((el) => {
         let trigger = el.closest('.trigger');
         var scene = new ScrollMagic.Scene({
@@ -71,7 +71,7 @@ allP.forEach((p) => {
             // duration: '80%'
 
         })
-            .setTween(el, {backgroundColor: "green", scale: 2.5, opacity: 1, x: 100, stagger: 0.3}) // trigger a TweenMax.to tween
+            .setTween(el, {backgroundColor: "green", scale: 2.5, opacity: 1, x: 100, stagger: 0.7}) // trigger a TweenMax.to tween
             .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
             .addTo(controller);
 
@@ -90,22 +90,48 @@ gsap.fromTo('.brand-container > ul > li:last-child  p', {opacity:0, x: 70}, {opa
 
 //home page animation
 
+let triggerElement = [...document.querySelectorAll('.trigger')];
+triggerElement.forEach((cont, k) => {
+    let allAnimated = [];
+    allAnimated.push(cont);
+    let allElTriggered = [...cont.querySelectorAll('.el-triggered')];
 
-let welcomeBlock = document.getElementById('farba-welcome');
-let welcomeElArray = []
-function checkIfOnPageWelcome() {
-    if (!welcomeBlock) {
+    allElTriggered.forEach((el) => {
+        allAnimated.push(el);
+        console.log(allAnimated + ' -- ' + k +' -k ' + el + ' --el');
+        allAnimated.forEach((el2, i) => {
+            let delay;
 
-    }
-    else {
-        console.log(welcomeBlock);
-        console.log(welcomeBlock.children);
+            if (i === 0) {
+                delay = 0.1;
+            } else{
+                delay = 0.7 + (0.2 * i);
+            }
+            console.log(cont + ' delay ' + delay + ':::' + i + ' number' )
+            let trigger = cont;
+            // console.log(el2 + ' element ' + delay + ' delay')
+            // gsap.fromTo(el, {opacity:0, y: 200}, {opacity: 1, y: 0, delay: delay, duration: 0.6})
+            var scene = new ScrollMagic.Scene({
+                triggerElement: cont,
+                triggerHook: 0.65,
+                reverse: false
+                //advanced with adding class (.setClassToggle("#reveal1", "visible") )
+                // triggerHook: 0.5,
+                // // reverse:false,
+                // offset: 40,
+                // duration: '80%'
 
-        welcomeElArray.push(welcomeBlock.lastElementChild);
-        console.log(welcomeElArray);
-    }
-}
-checkIfOnPageWelcome();
+            })
+                .setTween(el2, {opacity: 1, y: 0, x:0, delay: delay, duration: 0.5}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                .addTo(controller);
+        })
+
+
+    })
+
+})
+
 
 
 // welcomeBlock.forEach((p) => {

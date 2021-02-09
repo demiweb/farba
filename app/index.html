@@ -2,24 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>Title</title>
-    //= details/styles.html
+    <title>Pages</title>
 </head>
 <body>
-//= details/header.html
+<style>
+    .span {
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        font-size: 36px;
+        color: black;
+    }
 
-<main class="farba-main">
-    <section>
+    .style-list-pages {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
 
+    .link {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: "Comic Sans MS", sans-serif;
+        font-weight: bold;
+        color: blueviolet;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+    }
 
+    .list-item {
+        background: white;
+        border: 1px solid black;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        margin: 10px 0;
+    }
 
-    </section>
-    //= details/footer.html
-</main>
+    .list-item:hover {
+        background: rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+    }
 
+    .iframe {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        visibility: hidden;
+        transform: scale(0.3) translate(0%, -50px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+    }
 
+    .list-item:hover .iframe {
+        transform-origin: 0 0;
+        position: absolute;
+        visibility: visible;
+
+        z-index: 1;
+    }
+
+</style>
+<span class="span">Page</span>
+<ul class="style-list-pages">
+    <li class="list-item">
+        <a class="link" href="./home.html">home
+            <iframe class="iframe" width="1600" height="1000" src="./home.html" frameborder="0"></iframe>
+        </a>
+    </li>
+
+</ul>
 </body>
-
-//= details/allScripts.html
 </html>
