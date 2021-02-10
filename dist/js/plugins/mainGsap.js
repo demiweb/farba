@@ -91,6 +91,7 @@ gsap.fromTo('.brand-container > ul > li:last-child  p', {opacity:0, x: 70}, {opa
 //home page animation
 
 let triggerElement = [...document.querySelectorAll('.trigger')];
+let trigger2Element = [...document.querySelectorAll('.trigger-2')];
 triggerElement.forEach((cont, k) => {
     let allAnimated = [];
     allAnimated.push(cont);
@@ -123,6 +124,46 @@ triggerElement.forEach((cont, k) => {
 
             })
                 .setTween(el2, {opacity: 1, y: 0, x:0, delay: delay, duration: 0.5}) // trigger a TweenMax.to tween
+                // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+                .addTo(controller);
+        })
+
+
+    })
+
+});
+trigger2Element.forEach((cont, k) => {
+    let allAnimated2 = [];
+    allAnimated2.push(cont);
+    let allElTriggered = [...cont.querySelectorAll('.el-triggered')];
+
+    allElTriggered.forEach((el) => {
+        allAnimated2.push(el);
+        console.log(allAnimated2 + ' -- ' + k +' -k ' + el + ' --el');
+        allAnimated2.forEach((el2, i) => {
+            let delay;
+
+            if (i === 0) {
+                delay = 0.1;
+            } else{
+                delay = 0.7 + (0.2 * i);
+            }
+            console.log(cont + ' delay ' + delay + ':::' + i + ' number' )
+            let trigger = cont;
+            // console.log(el2 + ' element ' + delay + ' delay')
+            // gsap.fromTo(el, {opacity:0, y: 200}, {opacity: 1, y: 0, delay: delay, duration: 0.6})
+            var scene = new ScrollMagic.Scene({
+                triggerElement: cont,
+                triggerHook: 0.65,
+                reverse: false
+                //advanced with adding class (.setClassToggle("#reveal1", "visible") )
+                // triggerHook: 0.5,
+                // // reverse:false,
+                // offset: 40,
+                // duration: '80%'
+
+            })
+                .setTween(el2, {opacity: 1, y: 0, x:0, delay: delay, duration: 0.5, scale: 1}) // trigger a TweenMax.to tween
                 // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
                 .addTo(controller);
         })
