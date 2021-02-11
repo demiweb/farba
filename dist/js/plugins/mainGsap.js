@@ -99,7 +99,7 @@ triggerElement.forEach((cont, k) => {
 
     allElTriggered.forEach((el) => {
         allAnimated.push(el);
-        console.log(allAnimated + ' -- ' + k +' -k ' + el + ' --el');
+        // console.log(allAnimated + ' -- ' + k +' -k ' + el + ' --el');
         allAnimated.forEach((el2, i) => {
             let delay;
 
@@ -108,7 +108,7 @@ triggerElement.forEach((cont, k) => {
             } else{
                 delay = 0.7 + (0.2 * i);
             }
-            console.log(cont + ' delay ' + delay + ':::' + i + ' number' )
+            // console.log(cont + ' delay ' + delay + ':::' + i + ' number' )
             let trigger = cont;
             // console.log(el2 + ' element ' + delay + ' delay')
             // gsap.fromTo(el, {opacity:0, y: 200}, {opacity: 1, y: 0, delay: delay, duration: 0.6})
@@ -139,7 +139,7 @@ trigger2Element.forEach((cont, k) => {
 
     allElTriggered.forEach((el) => {
         allAnimated2.push(el);
-        console.log(allAnimated2 + ' -- ' + k +' -k ' + el + ' --el');
+        // console.log(allAnimated2 + ' -- ' + k +' -k ' + el + ' --el');
         allAnimated2.forEach((el2, i) => {
             let delay;
 
@@ -148,7 +148,7 @@ trigger2Element.forEach((cont, k) => {
             } else{
                 delay = 0.7 + (0.2 * i);
             }
-            console.log(cont + ' delay ' + delay + ':::' + i + ' number' )
+            // console.log(cont + ' delay ' + delay + ':::' + i + ' number' )
             let trigger = cont;
             // console.log(el2 + ' element ' + delay + ' delay')
             // gsap.fromTo(el, {opacity:0, y: 200}, {opacity: 1, y: 0, delay: delay, duration: 0.6})

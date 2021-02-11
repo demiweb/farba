@@ -67,7 +67,7 @@ gulp.task('html:det', async function () {
 gulp.task('css:build', async function () {
     gulp.src(path.src.css) // Выберем файлы по нужному пути
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 2 versions'],
+            overrideBrowserslist: ['last 2 versions', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
             cascade: false
         })) // Прогоним через autoprefixer
         .pipe(gulp.dest(path.build.css)) // Переместим их в папку build
