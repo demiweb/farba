@@ -1395,9 +1395,9 @@ body.no-scroll {
   color: #ffffff;
 }
 .brand-container > ul > li > p > b {
-  background: -webkit-linear-gradient(57deg, #b4671a 0%, #f4c788 0%, #e7c489 0%, #ca8a5a 100%);
-  background: -webkit-linear-gradient(33deg, #b4671a 0%, #f4c788 0%, #e7c489 0%, #ca8a5a 100%);
-  background: linear-gradient(57deg, #b4671a 0%, #f4c788 0%, #e7c489 0%, #ca8a5a 100%);
+  background-image: -webkit-linear-gradient(57deg, #b4671a 0%, #f4c788 0%, #e7c489 0%, #ca8a5a 100%);
+  background-image: -webkit-linear-gradient(33deg, #b4671a 0%, #f4c788 0%, #e7c489 0%, #ca8a5a 100%);
+  background-image: linear-gradient(57deg, #b4671a 0%, #f4c788 0%, #e7c489 0%, #ca8a5a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2297,8 +2297,8 @@ body.no-scroll {
   font-weight: 600;
   font-size: 120px;
   line-height: 120px;
-  background: -webkit-linear-gradient(229deg, #b4671a 25%, #f4c788 63%, #e7c489 50%, #ca8a5a 74%);
-  background: linear-gradient(-139deg, #b4671a 25%, #f4c788 63%, #e7c489 50%, #ca8a5a 74%);
+  background-image: -webkit-linear-gradient(229deg, #b4671a 25%, #f4c788 63%, #e7c489 50%, #ca8a5a 74%);
+  background-image: linear-gradient(-139deg, #b4671a 25%, #f4c788 63%, #e7c489 50%, #ca8a5a 74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: -webkit-box;
@@ -2323,8 +2323,8 @@ body.no-scroll {
 }
 @media screen and (max-width: 1220px) {
   .reasons-list__single-reason h5 {
-    background: -webkit-linear-gradient(33deg, #b4671a 28%, #f4c788 28%, #e7c489 28%, #ca8a5a 66%);
-    background: linear-gradient(57deg, #b4671a 28%, #f4c788 28%, #e7c489 28%, #ca8a5a 66%);
+    background-image: -webkit-linear-gradient(33deg, #b4671a 28%, #f4c788 28%, #e7c489 28%, #ca8a5a 66%);
+    background-image: linear-gradient(57deg, #b4671a 28%, #f4c788 28%, #e7c489 28%, #ca8a5a 66%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -2356,8 +2356,8 @@ body.no-scroll {
 }
 @media screen and (max-width: 992px) {
   .reasons-list__single-reason h5 {
-    background: -webkit-linear-gradient(33deg, #b4671a 24%, #f4c788 24%, #e7c489 50%, #ca8a5a 66%);
-    background: linear-gradient(57deg, #b4671a 24%, #f4c788 24%, #e7c489 50%, #ca8a5a 66%);
+    background-image: -webkit-linear-gradient(33deg, #b4671a 24%, #f4c788 24%, #e7c489 50%, #ca8a5a 66%);
+    background-image: linear-gradient(57deg, #b4671a 24%, #f4c788 24%, #e7c489 50%, #ca8a5a 66%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
