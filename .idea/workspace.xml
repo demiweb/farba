@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="976fa361-2dca-479d-8ea4-dc17bae3f3e2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/plugins/slider-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/plugins/slider-images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/plugins/slider-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/plugins/slider-images.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +37,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../unknown-folder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -62,7 +64,7 @@
       <workItem from="1612857382757" duration="19399000" />
       <workItem from="1612944908909" duration="16011000" />
       <workItem from="1613029073536" duration="19594000" />
-      <workItem from="1613115658714" duration="4374000" />
+      <workItem from="1613115658714" duration="15779000" />
     </task>
     <task id="LOCAL-00001" summary="768">
       <created>1612541799098</created>
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613134371374</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="inline-flex, block, for gradient text">
+      <created>1613135597519</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1613135597519</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,13 +142,14 @@
     <MESSAGE value="home page" />
     <MESSAGE value="style background-image: gradient" />
     <MESSAGE value="transparent = rgba(255, 255, 255, 0)" />
-    <option name="LAST_COMMIT_MESSAGE" value="transparent = rgba(255, 255, 255, 0)" />
+    <MESSAGE value="inline-flex, block, for gradient text" />
+    <option name="LAST_COMMIT_MESSAGE" value="inline-flex, block, for gradient text" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1613134370300">
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1613135596532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1613134370300" />
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1613135596532" />
     <state x="1109" y="302" key="EditFileWatcherDialog" timestamp="1612434470241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -148,10 +158,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612964405362" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1613134376768">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1613135600994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613134376768" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613135600994" />
     <state x="559" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1612442760956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

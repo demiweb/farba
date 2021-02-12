@@ -376,7 +376,7 @@ html, body {
 
 
 html, body {
-  scrollbar-color: #2a2a2a transparent; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-color: #2a2a2a rgba(255, 255, 255, 0); /* «цвет ползунка» «цвет полосы скроллбара» */
   scrollbar-width: 12px; /* толщина */
 }
 
@@ -384,7 +384,7 @@ html, body {
 ::-webkit-scrollbar {
   width: 8px; /* ширина для вертикального скролла */
   height: 8px; /* высота для горизонтального скролла */
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   position: fixed;
   overflow: hidden;
 }
@@ -591,7 +591,7 @@ main {
   width: 100%;
   flex-grow: 1;
   //background: white;
-  background: transparent;
+  background: rgba(255, 255, 255, 0);
 
   > ul {
     width: 100%;
@@ -1360,13 +1360,14 @@ body.no-scroll {
         color: $white-color;
 
         > b {
-          background: -webkit-linear-gradient(57deg, rgb(180, 103, 26) 0%, rgb(244, 199, 136) 0%, rgb(231, 196, 137) 0%, rgb(202, 138, 90) 100%);
-          background: -ms-linear-gradient(57deg, rgb(180, 103, 26) 0%, rgb(244, 199, 136) 0%, rgb(231, 196, 137) 0%, rgb(202, 138, 90) 100%);
-          background: -moz-linear-gradient(57deg, rgb(180, 103, 26) 0%, rgb(244, 199, 136) 0%, rgb(231, 196, 137) 0%, rgb(202, 138, 90) 100%);
-          background: linear-gradient(57deg, rgb(180, 103, 26) 0%, rgb(244, 199, 136) 0%, rgb(231, 196, 137) 0%, rgb(202, 138, 90) 100%);
+          background-image: -webkit-linear-gradient(57deg, rgb(180, 103, 26) 0%, rgb(244, 199, 136) 0%, rgb(231, 196, 137) 0%, rgb(202, 138, 90) 100%);
+          background-image: -ms-linear-gradient(57deg, rgb(180, 103, 26) 0%, rgb(244, 199, 136) 0%, rgb(231, 196, 137) 0%, rgb(202, 138, 90) 100%);
+          background-image: -moz-linear-gradient(57deg, rgb(180, 103, 26) 0%, rgb(244, 199, 136) 0%, rgb(231, 196, 137) 0%, rgb(202, 138, 90) 100%);
+          background-image: linear-gradient(57deg, rgb(180, 103, 26) 0%, rgb(244, 199, 136) 0%, rgb(231, 196, 137) 0%, rgb(202, 138, 90) 100%);
           -webkit-background-clip: text;
+          display: inline-block;
           background-clip: text;
-          -webkit-text-fill-color: transparent;
+          -webkit-text-fill-color: rgba(255, 255, 255, 0);
         }
       }
 
@@ -1500,7 +1501,7 @@ body.no-scroll {
 
       &.animated {
         .cls-1 {
-          fill: transparent;
+          fill: rgba(255, 255, 255, 0);
           stroke-width: 20;
           stroke: #f2f2f2;
           stroke-dasharray: 2000;
@@ -1509,7 +1510,7 @@ body.no-scroll {
         }
 
         .cls-2 {
-          fill: transparent;
+          fill: rgba(255, 255, 255, 0);
           stroke-width: 20;
           stroke: #f2f2f2;
           stroke-dasharray: 2000;
@@ -1519,7 +1520,7 @@ body.no-scroll {
         }
 
         .cls-3 {
-          fill: transparent;
+          fill: rgba(255, 255, 255, 0);
           stroke-width: 20;
           stroke: #f2f2f2;
           stroke-dasharray: 2000;
@@ -1529,7 +1530,7 @@ body.no-scroll {
         }
 
         .cls-4 {
-          fill: transparent;
+          fill: rgba(255, 255, 255, 0);
           stroke-width: 20;
           stroke: #f2f2f2;
           stroke-dasharray: 2000;
@@ -1540,7 +1541,7 @@ body.no-scroll {
         }
 
         .cls-5 {
-          fill: transparent;
+          fill: rgba(255, 255, 255, 0);
           stroke-width: 20;
           stroke: #f2f2f2;
           stroke-dasharray: 2000;
@@ -1746,7 +1747,7 @@ body.no-scroll {
   justify-content: center;
   align-items: center;
   border: 1px solid $title-color;
-  background: transparent;
+  background: rgba(255, 255, 255, 0);
   transition: color 0.3s ease, background-color 0.3s ease;
 
   &:hover {
@@ -1969,7 +1970,7 @@ body.no-scroll {
       &:hover {
         border-color: $white-color;
         color: $white-color;
-        background: transparent;
+        background: rgba(255, 255, 255, 0);
       }
     }
 
@@ -2152,7 +2153,7 @@ body.no-scroll {
     top: 5px;
     left: 0;
     border-radius: 37px;
-    border-color: transparent;
+    border-color: rgba(255, 255, 255, 0);
     transition: top 0.3s ease, bottom 0.3s ease, left 0.3s ease, right 0.3s ease;
   }
 
@@ -2188,10 +2189,10 @@ body.no-scroll {
     font-weight: 600;
     font-size: 120px;
     line-height: 120px;
-    background: linear-gradient(-139deg, #b4671a 25%, #f4c788 63%, #e7c489 50%, #ca8a5a 74%);
+    background-image: linear-gradient(-139deg, #b4671a 25%, #f4c788 63%, #e7c489 50%, #ca8a5a 74%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: flex;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -2206,9 +2207,9 @@ body.no-scroll {
     }
 
     @media screen and (max-width: 1220px) {
-      background: linear-gradient(57deg, rgb(180, 103, 26) 28%, rgb(244, 199, 136) 28%, rgb(231, 196, 137) 28%, rgb(202, 138, 90) 66%);
+      background-image: linear-gradient(57deg, rgb(180, 103, 26) 28%, rgb(244, 199, 136) 28%, rgb(231, 196, 137) 28%, rgb(202, 138, 90) 66%);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0);
     }
 
     &::before {
@@ -2246,9 +2247,9 @@ body.no-scroll {
   @media screen and (max-width: 992px) {
 
     h5 {
-      background: linear-gradient(57deg, rgb(180, 103, 26) 24%, rgb(244, 199, 136) 24%, rgb(231, 196, 137) 50%, rgb(202, 138, 90) 66%);
+      background-image: linear-gradient(57deg, rgb(180, 103, 26) 24%, rgb(244, 199, 136) 24%, rgb(231, 196, 137) 50%, rgb(202, 138, 90) 66%);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0);
     }
     h6 {
 
@@ -2805,7 +2806,7 @@ body.no-scroll {
 
   > span {
     position: absolute;
-    color: transparent;
+    color: rgba(255, 255, 255, 0);
     -webkit-text-stroke: 1px $white-color;
     opacity: 0.4;
     font-family: $second-font;
@@ -3162,7 +3163,7 @@ li.slick-slide {
       height: 40px;
       outline: none;
       border: none;
-      background: transparent;
+      background: rgba(255, 255, 255, 0);
       border-bottom: 1px solid #eeeeed;
       color: $white-color;
       font-size: 20px;
@@ -3181,7 +3182,7 @@ li.slick-slide {
       height: 120px;
       outline: none;
       border: none;
-      background: transparent;
+      background: rgba(255, 255, 255, 0);
       border-bottom: 1px solid #eeeeed;
       color: $white-color;
       font-size: 20px;
@@ -3222,6 +3223,498 @@ li.slick-slide {
 }
 
 
-
-
 // main part
+// main part other pages
+.farba-main__top-title-part {
+  width: 100%;
+  height: 100%;
+  > .container {
+    height: 100%;
+  }
+}
+
+.top-title-part__block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 63px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  h1 {
+    font-family: $main-font;
+    font-weight: normal;
+    color: $white-color;
+    font-size: 90px;
+    line-height: 90px;
+    text-align: center;
+  }
+  p {
+    font-family: $second-font;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: $white-color;
+    text-align: center;
+    margin-top: 35px;
+  }
+}
+
+.item-page__breadcrumbs {
+  position: absolute;
+  top: 63px;
+  left: 0;
+  ul  {
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 8px;
+      &::before {
+        display: inline-block;
+        content: '-';
+        color: $white-color;
+        margin-right: 6px;
+      }
+      &:first-child {
+        margin-left: 0;
+        &::before {
+          content: none;
+        }
+      }
+      &:last-child {
+        &::before {
+          color: #949494;
+        }
+      }
+      &.active {
+        span {
+          color: #949494;
+        }
+      }
+      a, span {
+        font-family: $main-font;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        color: $white-color;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.farba-projects {
+  width: 100%;
+  padding: 160px 0;
+  
+  @media screen and (max-width: 768px) {
+    padding: 80px 0;
+  }
+}
+
+.farba-projects__tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    li:not(.divider) {
+      border-top: 1px solid $title-color;
+      border-bottom: 1px solid $title-color;
+      height: 100%;
+      opacity: 0.3;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 0 12px;
+      cursor: pointer;
+      height: 53px;
+      div {
+        width: 12px;
+        height: 12px;
+        border: 1px solid #c3c3c3;
+        background: rgba(255, 255, 255, 0);
+        position: relative;
+        margin-right: 12px;
+        &::before {
+          content: none;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          display: inline-block;
+          height: 10px;
+          transform: translate(-25%, -50%);
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 28px;
+        font-family: $main-font;
+        font-weight: 600;
+        color: $title-color;
+      }
+      &.active {
+        opacity: 1;
+        div::before {
+          content: url("../img/done.png");
+
+        }
+      }
+    }
+    li.divider {
+      margin: 0 90px;
+      height: 53px;
+      width: 1px;
+      background: #b3b3b3;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    ul {
+      li.divider {
+        margin: 0 36px;
+        height: 100%;
+        width: 1px;
+        background: #b3b3b3;
+      }
+    }
+  }
+  @media screen and (max-width: 525px) {
+    ul {
+      width: 100%;
+      flex-direction: column;
+      li:not(.divider) {
+        height: 53px;
+      }
+      li.divider {
+        margin: 36px 0;
+        height: 1px;
+        width: 100%;
+        background: #b3b3b3;
+      }
+    }
+  }
+}
+
+.container--left-p {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 200px;
+  
+  @media screen and (max-width: 1600px) {
+    padding-left: 80px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    padding-left: 15px;
+  }
+}
+
+.farba-projects__projects-list {
+  width: 100%;
+  padding: 110px 0;
+  @media screen and (max-width: 768px) {
+    padding: 40px 0;
+  }
+
+}
+.project-list__project {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 1600px) {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: 60px;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}
+
+.project__left-side {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+}
+
+.left-side__text-block {
+  width: 100%;
+  max-width: 600px;
+
+  > small {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: $main-font;
+    font-weight: 300;
+    color: #ababab;
+    display: block;
+
+  }
+  span {
+    font-size: 80px;
+    line-height: 72px;
+    font-family: $second-font;
+    font-weight: normal;
+    color: $title-color;
+    margin-left: auto;
+    display: inline-block;
+    float: right;
+    small {
+      font-size: 40px;
+
+    }
+    sup {
+      font-size: 40px;
+    }
+  }
+  button {
+      outline: none;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: $main-font;
+    font-weight: 300;
+    color: $title-color;
+    margin: 45px 0;
+    cursor: pointer;
+    height: 48px;
+    overflow: hidden;
+    position: relative;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: $orange-color;
+      transition: color 0.5s ease;
+      &::after {
+        transform: translate(0, 0);
+        border-right: 1px solid #cecece;
+        right: 0;
+        transition: all 0.5s ease, border-right-color 1s ease;
+      }
+
+      &::before {
+        background: $orange-color;
+        transition: background-color 0.5s ease;
+      }
+    }
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 52px;
+      height: 1px;
+      background: #cecece;
+      margin-right: 12px;
+      transition: background-color 0.5s ease;
+
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 100%;
+      border-top: 1px solid #cecece;
+      border-bottom: 1px solid #cecece;
+      border-left: 1px solid #cecece;
+      transform: translate(-100%, 0);
+      border-right: 1px solid rgba(255, 255, 255, 0);
+      transition: all 0.5s ease, border-right-color 0.01s ease;
+    }
+  }
+
+  h5 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    font-family: $main-font;
+    color: $title-color;
+    margin-bottom: 35px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      z-index: -1;
+      width: 177px;
+      height: 116px;
+      background: url('../img/footer-bg.png') no-repeat center;
+      background-size: contain;
+      -webkit-transform: translate(-60%, -35%);
+      transform: translate(-60%, -35%);
+    }
+
+    @media screen and (max-width: 768px) {
+      &::before {
+        width: 120px;
+        height: 79px;
+      }
+    }
+  }
+
+  p {
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: $p-color;
+    margin-top: 25px;
+  }
+  @media screen and (max-width: 1600px) {
+    button {
+    margin: 30px 0;
+    }
+  }
+  @media screen and (max-width: 1240px) {
+    h5 {
+      margin-bottom: 25px;
+    }
+    span {
+      font-size: 68px;
+      small, sup {
+        font-size: 36px;
+      }
+    }
+  }
+  @media screen and (max-width: 425px) {
+    h5 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+  }
+}
+
+.project__right-side {
+  width: 100%;
+  flex-shrink: 0;
+  max-width: 100%;
+  height: 640px;
+  position: relative;
+  //max-width: 905px;
+  overflow: hidden;
+  @media screen and (max-width: 1600px) {
+    height: 580px;
+  }
+  @media screen and (max-width: 992px) {
+    height: 460px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 420px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 360px;
+  }
+}
+.slider-project {
+  width: 100%;
+  height: 100%;
+}
+.slider-project {
+  width: 100% !important;
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.6s ease;
+  //overflow: hidden;
+}
+
+.slides-control-btn {
+  width: 48px;
+  height: 48px;
+  background: white;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  &.slides-control-btn--left {
+    left: 0;
+  }
+  &.slides-control-btn--right {
+    right: 0;
+    transform: translate(0, -50%) rotate(180deg);
+  }
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    border: 1px solid $title-color;
+    border-right: none;
+    border-bottom: none;
+    transform: translate(-40%, -50%) rotate(-45deg);
+  }
+}
+.single-slide-proj {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.button-up {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.2, 1.2);
+      transition: all 0.3s ease;
+
+    }
+    background: url("../img/right.png") no-repeat center;
+
+    .svg-abs svg{
+      opacity: 1;
+    }
+  }
+}
+// main part other pages

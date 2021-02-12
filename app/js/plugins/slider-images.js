@@ -4,7 +4,7 @@ $(document).ready(function(){
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
+        infinite: false,
         variableWidth: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -17,7 +17,7 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    infinite: true,
+
 
                 }
             },
@@ -26,8 +26,7 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    infinite: true,
-                    variableWidth: false,
+                    variableWidth: true,
                 }
             },
 
@@ -44,3 +43,22 @@ $(document).ready(function(){
     })
 
 });
+
+function checkMainWidth() {
+    let contWi = document.querySelector('.farba-main .container');
+    let slides = [...document.querySelectorAll('.slider-slick li')];
+    if (window.innerWidth < 576) {
+        setTimeout(() => {
+            slides.forEach((el) => {
+                console.log(el);
+                el.style.width = `${contWi.offsetWidth}px !important`;
+            })
+        }, 1500)
+
+    }
+    // console.log(contWi.offsetWidth);
+};
+window.onload = () => {
+    checkMainWidth();
+}
+checkMainWidth();
