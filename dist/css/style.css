@@ -1399,6 +1399,7 @@ body.no-scroll {
   background-image: -webkit-linear-gradient(33deg, #b4671a 0%, #f4c788 0%, #e7c489 0%, #ca8a5a 100%);
   background-image: linear-gradient(57deg, #b4671a 0%, #f4c788 0%, #e7c489 0%, #ca8a5a 100%);
   -webkit-background-clip: text;
+  display: inline-block;
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
@@ -2301,9 +2302,9 @@ body.no-scroll {
   background-image: linear-gradient(-139deg, #b4671a 25%, #f4c788 63%, #e7c489 50%, #ca8a5a 74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
