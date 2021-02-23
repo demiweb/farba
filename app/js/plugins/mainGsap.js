@@ -54,39 +54,41 @@ burgerBtn.addEventListener('click', () => {
 const controller = new ScrollMagic.Controller();
 
 //work code
-let allP = [...document.querySelectorAll('main .trigger')];
-
-allP.forEach((p) => {
-    let allAnimated = [...p.querySelectorAll('table')];
-    allAnimated.forEach((el) => {
-        let trigger = el.closest('.trigger');
-        var scene = new ScrollMagic.Scene({
-            triggerElement: trigger,
-            triggerHook: 0.5,
-            reverse: false
-            //advanced with adding class (.setClassToggle("#reveal1", "visible") )
-            // triggerHook: 0.5,
-            // // reverse:false,
-            // offset: 40,
-            // duration: '80%'
-
-        })
-            .setTween(el, {backgroundColor: "green", scale: 2.5, opacity: 1, x: 100, stagger: 0.7}) // trigger a TweenMax.to tween
-            .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-            .addTo(controller);
-
-    })
-
-//work code
-
-});
+// let allP = [...document.querySelectorAll('main .trigger')];
+//
+// allP.forEach((p) => {
+//     let allAnimated = [...p.querySelectorAll('table')];
+//     allAnimated.forEach((el) => {
+//         let trigger = el.closest('.trigger');
+//         var scene = new ScrollMagic.Scene({
+//             triggerElement: trigger,
+//             triggerHook: 0.5,
+//             reverse: false
+//             //advanced with adding class (.setClassToggle("#reveal1", "visible") )
+//             // triggerHook: 0.5,
+//             // // reverse:false,
+//             // offset: 40,
+//             // duration: '80%'
+//
+//         })
+//             .setTween(el, {backgroundColor: "green", scale: 2.5, opacity: 1, x: 100, stagger: 0.7}) // trigger a TweenMax.to tween
+//             .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+//             .addTo(controller);
+//
+//     })
+//
+// //work code
+//
+// });
 
 //home page animation
 gsap.fromTo('.farba-main__farba-main-title', {opacity:0}, {opacity: 1, duration: 1.2, delay: 0.4})
-gsap.fromTo('.farba-main-title__brand', {y: -50, opacity:0}, {opacity: 1, y:0, duration: 0.7, delay: 1.0, clearProps: 'all'})
+gsap.fromTo('.anim-to-top', {y: -50, opacity:0}, {opacity: 1, y:0, duration: 0.7, delay: 1.0, clearProps: 'all'})
 gsap.fromTo('.absolute-pos svg', {opacity:0}, {opacity: 1, duration: 1.3, delay: 0.6, clearProps: 'all'})
 gsap.fromTo('.brand-container > ul > li:first-child  p', {opacity:0, x: -60}, {opacity: 1, x: 0,duration: 0.7, delay: 1.2, clearProps: 'all'})
 gsap.fromTo('.brand-container > ul > li:last-child  p', {opacity:0, x: 70}, {opacity: 1, x: 0,duration: 0.7, delay: 1.4, clearProps: 'all'})
+gsap.fromTo('.anim-to-right', {opacity:0, x: -160}, {opacity: 1, x: 0,duration: 0.7, delay: 0.9, clearProps: 'all'})
+gsap.fromTo('.anim-to-left', {opacity:0, x: 160}, {opacity: 1, x: 0,duration: 0.7, delay: 1.1, clearProps: 'all'})
 
 //home page animation
 
@@ -173,33 +175,3 @@ trigger2Element.forEach((cont, k) => {
 
 })
 
-
-
-// welcomeBlock.forEach((p) => {
-//
-//         var scene = new ScrollMagic.Scene({
-//             triggerElement: welcomeBlock,
-//             triggerHook: 0.6,
-//             reverse: false
-//             //advanced with adding class (.setClassToggle("#reveal1", "visible") )
-//             // triggerHook: 0.5,
-//             // // reverse:false,
-//             // offset: 40,
-//             // duration: '80%'
-//
-//         })
-//             .setClassToggle(welcomeBlock, "visible")
-//             .setClassToggle('#farba-welcome .farba-svg-bg', "animated")
-//             .setTween('#farba-welcome .simple-block__img', {opacity: 1, delay: 0.4})
-//             .setTween('#farba-welcome .simple-block__text-part', {opacity: 1, x: 0, delay: 0.5})
-//             // .setTween(welcomeBlock, {opacity: 1, y: 0, clearProps: 'all'}) // trigger a TweenMax.to tween
-//             // .setTween(el, {backgroundColor: "green", scale: 2.5, opacity: 1, x: 100, stagger: 0.3}) // trigger a TweenMax.to tween
-//             .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-//             .addTo(controller);
-//
-//             gsap.fromTo('#farba-welcome.visible .simple-block__img', {opacity: 0}, {opacity:1, duration: 2}
-//             )
-//
-// //work code
-//
-// });

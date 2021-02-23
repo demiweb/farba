@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$(document).ready(function () {
+
     $('.slider-slick').slick({
         arrows: false,
         slidesToShow: 1,
@@ -33,7 +34,7 @@ $(document).ready(function(){
             // settings: "unslick"
             // instead of a settings object
         ]
-});
+    });
     let sliderSlides = [...document.querySelectorAll('.slider-slick li img')];
     sliderSlides.forEach((el) => {
         el.addEventListener('load', () => {
@@ -42,6 +43,7 @@ $(document).ready(function(){
     })
 
 });
+
 function checkIfProjectsOnPage() {
     let projectsBlocks = [...document.querySelectorAll('.slider-project')];
     if (!projectsBlocks) {
@@ -50,17 +52,19 @@ function checkIfProjectsOnPage() {
         projectsBlocks.forEach((pr, i) => {
             let imgAmount = 0;
             pr.setAttribute('data-project-id', i);
-            console.log(pr.dataset);
-            console.log(pr.children);
+            // console.log(pr.dataset);
+            // console.log(pr.children);
             [...pr.children].forEach((child) => {
                 imgAmount += 1;
-                console.log(imgAmount);
+                // console.log(imgAmount);
             });
+
             function setImgWidth(imgAmount) {
                 [...pr.children].forEach((img) => {
                     // img.style.width = `calc(100% / ${imgAmount})`
                 })
             }
+
             setImgWidth(imgAmount);
             let transNumb = 0;
             let ctrlBtns = [...pr.closest('.project__right-side').querySelectorAll('.slides-control-btn')];
@@ -95,7 +99,8 @@ function checkIfProjectsOnPage() {
             })
         })
     }
-}
+};
+
 function checkMainWidth() {
     let contWi = document.querySelector('.farba-main .container');
     let slides = [...document.querySelectorAll('.slider-slick li')];
@@ -115,4 +120,3 @@ window.onload = () => {
     checkIfProjectsOnPage();
 }
 checkMainWidth();
-

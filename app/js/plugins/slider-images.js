@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     $('.slider-slick').slick({
         arrows: false,
@@ -34,7 +34,7 @@ $(document).ready(function(){
             // settings: "unslick"
             // instead of a settings object
         ]
-});
+    });
     let sliderSlides = [...document.querySelectorAll('.slider-slick li img')];
     sliderSlides.forEach((el) => {
         el.addEventListener('load', () => {
@@ -43,6 +43,63 @@ $(document).ready(function(){
     })
 
 });
+
+function checkIfProjectsOnPage() {
+    let projectsBlocks = [...document.querySelectorAll('.slider-project')];
+    if (!projectsBlocks) {
+
+    } else {
+        projectsBlocks.forEach((pr, i) => {
+            let imgAmount = 0;
+            pr.setAttribute('data-project-id', i);
+            // console.log(pr.dataset);
+            // console.log(pr.children);
+            [...pr.children].forEach((child) => {
+                imgAmount += 1;
+                // console.log(imgAmount);
+            });
+
+            function setImgWidth(imgAmount) {
+                [...pr.children].forEach((img) => {
+                    // img.style.width = `calc(100% / ${imgAmount})`
+                })
+            }
+
+            setImgWidth(imgAmount);
+            let transNumb = 0;
+            let ctrlBtns = [...pr.closest('.project__right-side').querySelectorAll('.slides-control-btn')];
+            ctrlBtns.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    if (btn.classList.contains('slides-control-btn--left')) {
+                        transNumb -= 100;
+                        let minimumTrans = -((imgAmount - 1) * 100);
+                        let maximumTrans = 0;
+                        if (transNumb < minimumTrans) {
+                            transNumb = maximumTrans;
+                        } else if (transNumb === maximumTrans) {
+                            transNumb = minimumTrans;
+                        } else {
+
+                        }
+                        pr.style.transform = `translate(${transNumb}%, 0)`;
+                    } else {
+                        transNumb += 100;
+                        let minimumTrans = -((imgAmount - 1) * 100);
+                        let maximumTrans = 0;
+                        if (transNumb === minimumTrans) {
+                            transNumb = maximumTrans;
+                        } else if (transNumb > maximumTrans) {
+                            transNumb = minimumTrans;
+                        } else {
+
+                        }
+                        pr.style.transform = `translate(${transNumb}%, 0)`;
+                    }
+                })
+            })
+        })
+    }
+};
 
 function checkMainWidth() {
     let contWi = document.querySelector('.farba-main .container');
@@ -60,5 +117,7 @@ function checkMainWidth() {
 };
 window.onload = () => {
     checkMainWidth();
+    checkIfProjectsOnPage();
 }
 checkMainWidth();
+
