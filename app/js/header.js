@@ -7,4 +7,6 @@ burgerBtn.addEventListener('click', () => {
     document.body.classList.toggle('no-scroll');
 });
 
+
+
 //= plugins/slides.js

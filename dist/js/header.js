@@ -7,6 +7,8 @@ burgerBtn.addEventListener('click', () => {
     document.body.classList.toggle('no-scroll');
 });
 
+
+
 function forTest() {
     console.log('test test test')
 }

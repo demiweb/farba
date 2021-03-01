@@ -108,7 +108,7 @@ triggerElement.forEach((cont, k) => {
             if (i === 0) {
                 delay = 0.1;
             } else{
-                delay = 0.7 + (0.2 * i);
+                delay = 0.4 + (0.2 * i);
             }
             // console.log(cont + ' delay ' + delay + ':::' + i + ' number' )
             let trigger = cont;
@@ -116,7 +116,7 @@ triggerElement.forEach((cont, k) => {
             // gsap.fromTo(el, {opacity:0, y: 200}, {opacity: 1, y: 0, delay: delay, duration: 0.6})
             var scene = new ScrollMagic.Scene({
                 triggerElement: cont,
-                triggerHook: 0.65,
+                triggerHook: 0.91,
                 reverse: false
                 //advanced with adding class (.setClassToggle("#reveal1", "visible") )
                 // triggerHook: 0.5,
@@ -125,7 +125,7 @@ triggerElement.forEach((cont, k) => {
                 // duration: '80%'
 
             })
-                .setTween(el2, {opacity: 1, y: 0, x:0, delay: delay, duration: 0.5}) // trigger a TweenMax.to tween
+                .setTween(el2, {opacity: 1, y: 0, x:0, delay: delay, duration: 0.3}) // trigger a TweenMax.to tween
                 // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
                 .addTo(controller);
         })
@@ -148,7 +148,7 @@ trigger2Element.forEach((cont, k) => {
             if (i === 0) {
                 delay = 0.1;
             } else{
-                delay = 0.7 + (0.2 * i);
+                delay = 0.4 + (0.2 * i);
             }
             // console.log(cont + ' delay ' + delay + ':::' + i + ' number' )
             let trigger = cont;
@@ -156,7 +156,7 @@ trigger2Element.forEach((cont, k) => {
             // gsap.fromTo(el, {opacity:0, y: 200}, {opacity: 1, y: 0, delay: delay, duration: 0.6})
             var scene = new ScrollMagic.Scene({
                 triggerElement: cont,
-                triggerHook: 0.65,
+                triggerHook: 0.91,
                 reverse: false
                 //advanced with adding class (.setClassToggle("#reveal1", "visible") )
                 // triggerHook: 0.5,
@@ -165,7 +165,7 @@ trigger2Element.forEach((cont, k) => {
                 // duration: '80%'
 
             })
-                .setTween(el2, {opacity: 1, y: 0, x:0, delay: delay, duration: 0.5, scale: 1}) // trigger a TweenMax.to tween
+                .setTween(el2, {opacity: 1, y: 0, x:0, delay: delay, duration: 0.3, scale: 1}) // trigger a TweenMax.to tween
                 // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
                 .addTo(controller);
         })

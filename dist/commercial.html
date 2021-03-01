@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <title>Title</title>
+    <!--start styles-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <script src="//cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    
+    
+    <!--end styles-->
+</head>
+<body>
+
+
+
+
+<header class="farba-header">
+    <div class="container">
+        <div class="farba-header__container">
+            <div class="farba__burger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="farba-header__socials">
+                <ul>
+                    <li><a href="">facebook</a></li>
+                    <li><a href="">instagram</a></li>
+                </ul>
+            </nav>
+            <nav class="farba-header__language">
+                <ul>
+                    <li class="active"><a href="#">ua</a></li>
+                    <li><a href="#">ru</a></li>
+                </ul>
+
+            </nav>
+
+
+        </div>
+
+    </div>
+    <section class="farba-header__navigation">
+        <nav class="farba-header__menu">
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Наші проекти</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+            <svg viewBox="70 70 250 250" width="145px" height="145px" class="svg-animated">
+                <defs>
+                    <path id="MyPath"
+                          d="M 200, 200
+             m -100, 0
+             a 100,100 0 1,1 200,0
+             a 100,100 0 1,1 -200,0
+" />
+                </defs>
+                <circle cx="200" cy="200" r="90" fill="transparent" stroke-width="2px"  stroke-dashoffset="100%"/>
+
+                <text font-family="Cormorant Garamont, serif" style="text-transform: uppercase" font-size="19.6"  >
+                    <textPath xlink:href="#MyPath">
+                        нове життя - новий ремонт - нове життя - новий ремонт -
+                    </textPath>
+                </text>
+
+            </svg>
+        </nav>
+        <nav class="farba-header__submenu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img class="lozad" data-src="./img/3d-contemporary-living-room-interior-and-modern-furniture.png" alt="">
+                        </div>
+                        <p>Ремонт квартир та будинків</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img class="lozad" data-src="./img/corporate-building-with-minimalist-empty-room.png" alt="">
+                        </div>
+                        <p>Ремонт  комерційних  приміщень</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img class="lozad" data-src="./img/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering.png" alt="">
+                        </div>
+                        <p>Дизайн інтер’єру</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img class="lozad" data-src="./img/workspace-workplace-office-table.png" alt="">
+                        </div>
+                        <p>Проектно - технічна документація</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img class="lozad" data-src="./img/Open-Folder11.png" alt="">
+                        </div>
+                        <p>Пакети послуг</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img class="lozad" data-src="./img/worker-holding-hammer-drill.png" alt="">
+                        </div>
+                        <p>Додаткові послуги</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+</header>
+
+<main class="farba-main">
+
+    <section class="farba-main__farba-main-title">
+        <img class="lozad"
+             data-src="./img/bg-commercial.png"
+             alt="">
+        <div class="farba-main__top-title-part">
+            <div class="container">
+                <div class="top-title-part__block anim-to-top">
+                    <div class="absolute-pos">
+                        <svg viewBox="70 70 250 250" width="145px" height="145px" class="svg-animated">
+                            <defs>
+                                <path id="MyPath"
+                                      d="M 200, 200
+             m -100, 0
+             a 100,100 0 1,1 200,0
+             a 100,100 0 1,1 -200,0
+"/>
+                            </defs>
+                            <circle cx="200" cy="200" r="90" fill="transparent" stroke-width="2px"
+                                    stroke-dashoffset="100%"/>
+
+                            <text font-family="Cormorant Garamont, serif" style="text-transform: uppercase"
+                                  font-size="19.6">
+                                <textPath xlink:href="#MyPath">
+                                    нове життя - новий ремонт - нове життя - новий ремонт -
+                                </textPath>
+                            </text>
+
+                        </svg>
+                    </div>
+                    <nav class="item-page__breadcrumbs">
+                        <ul>
+                            <li><a href="/">Головна</a></li>
+                            <li class="active"><span>Ремонт комерційних приміщень</span></li>
+                        </ul>
+                    </nav>
+                    <h1>Ремонт комерційних приміщень</h1>
+                    <p>Стильно та функціонально</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="farba-main__rubric-about trigger-2">
+        <div class="container">
+            <div class="about-us-block__container">
+                <div class="about-us-block__with-img el-triggered">
+                    <div class="absolute-pos">
+                        <svg viewBox="70 70 250 250" class="svg-animated">
+                            <defs>
+                                <path id="MyPath"
+                                      d="M 200, 200
+             m -100, 0
+             a 100,100 0 1,1 200,0
+             a 100,100 0 1,1 -200,0
+"/>
+                            </defs>
+                            <circle cx="200" cy="200" r="90" fill="transparent" stroke-width="2px"
+                                    stroke-dashoffset="100%"/>
+
+                            <text font-family="Cormorant Garamont, serif" style="text-transform: uppercase"
+                                  font-size="19.6">
+                                <textPath xlink:href="#MyPath">
+                                    нове життя - новий ремонт - нове життя - новий ремонт -
+                                </textPath>
+                            </text>
+
+                        </svg>
+                    </div>
+                    <div class="container-img">
+                        <img class="lozad" data-src="./img/commercial-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text-block el-triggered">
+                    <h5>Ремонт комерційних приміщень - це одна
+                        з наших найсильніших сторін у сфері ремонту та дизайну інтер’єрів.
+                    </h5>
+                    <p>Основна задача, яку ми ставимо перед собою при ремонті комерційних приміщень – грамотне поєднання
+                        стильного інтер'єру та розробка функціональності під кожен вид бізнесу. Адже погодьтеся, деколи
+                        розміщення розетки чи робочого столу грає не меншу роль, ніж загальне оформлення проекту.</p>
+                    <p>Завдяки рокам практики роботи з бізнесом, ми ще на старті розробки концепції допоможемо врахувати
+                        всі моменти, які гратимуть роль при експлуатації приміщення.
+                        До деталей продумаємо прокладання комунікацій: водопостачання, каналізції, електрики та
+                        вентиляції. </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="farba-main__repair">
+        <div class="container">
+            <div class="farba-titled-block el-triggered">
+                <h2>Пропонуємо вам ремонт  будь-якої складності
+                </h2>
+            </div>
+
+        </div>
+        <div class="repair__categories">
+            <div class="repair__single">
+                <div class="img">
+                    <img src="./img/commercial-2.png" alt="">
+                </div>
+                <h6>
+                    Ремонт офісних <br>приміщень
+                </h6>
+                <div>
+                    <p>
+                        Основна задача, яку ми ставимо перед собою при ремонті комерційних приміщень – грамотне поєднання стильного інтер'єру та розробка функціональності під кожен вид бізнесу. Адже погодьтеся, деколи розміщення розетки чи робочого столу грає не меншу роль, ніж загальне оформлення проекту.
+                    </p>
+                    <p>
+                        Завдяки рокам практики роботи з бізнесом, ми ще на старті розробки концепції допоможемо врахувати всі моменти, які гратимуть роль при експлуатації приміщення.
+                    </p>
+                </div>
+                <button>
+                    <span class="more">Дізнатися більше</span>
+                    <span class="hide">Сховати</span>
+
+                </button>
+            </div>
+            <div class="repair__single">
+                <div class="img">
+                    <img src="./img/commercial-3.png" alt="">
+                </div>
+                <h6>
+                    Ремонт ресторанів <br>та розважальних закладів
+                </h6>
+                <div>
+                    <p>
+                        Основна задача, яку ми ставимо перед собою при ремонті комерційних приміщень – грамотне поєднання стильного інтер'єру та розробка функціональності під кожен вид бізнесу. Адже погодьтеся, деколи розміщення розетки чи робочого столу грає не меншу роль, ніж загальне оформлення проекту.
+                    </p>
+                    <p>
+                        Завдяки рокам практики роботи з бізнесом, ми ще на старті розробки концепції допоможемо врахувати всі моменти, які гратимуть роль при експлуатації приміщення.
+                    </p>
+                </div>
+                <button>
+                    <span class="more">Дізнатися більше</span>
+                    <span class="hide">Сховати</span>
+
+                </button>
+            </div>
+            <div class="repair__single">
+                <div class="img">
+                    <img src="./img/commercial-4.png" alt="">
+                </div>
+                <h6>
+                    Будь-який інший <br>вид ремонту
+                </h6>
+                <div>
+                    <p>
+                        Основна задача, яку ми ставимо перед собою при ремонті комерційних приміщень – грамотне поєднання стильного інтер'єру та розробка функціональності під кожен вид бізнесу. Адже погодьтеся, деколи розміщення розетки чи робочого столу грає не меншу роль, ніж загальне оформлення проекту.
+                    </p>
+                    <p>
+                        Завдяки рокам практики роботи з бізнесом, ми ще на старті розробки концепції допоможемо врахувати всі моменти, які гратимуть роль при експлуатації приміщення.
+                    </p>
+                </div>
+                <button>
+                    <span class="more">Дізнатися більше</span>
+                    <span class="hide">Сховати</span>
+
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="farba-main__work-stages">
+        <div class="container">
+            <div class="work-stages__container">
+                <div class="farba-titled-block el-triggered">
+                    <h2>Етапи ремонту</h2>
+                    <p>Виконання всіх домовленостей, здача об’єкту в обговорений строк – для нас це звичні умови
+                        співпраці, які інші видають за конкурентні переваги.
+                        Ми ж своїм клієнтам пропонуємо дещо більше :
+
+                    </p>
+                </div>
+            </div>
+            <div class="work-stages__stages-list">
+                <div class="stages-list__single-stage">
+                    <div class="single-stage__left">
+                        <p>01</p>
+                        <div class="img-container">
+                            <img class="lozad"
+                                 data-src="./img/comm-1.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="single-stage__right">
+                        <div class="circle-text">
+                            <div class="svg-abs">
+                                <svg viewBox="0 0 254 254">
+
+                                    <circle cx="127" cy="127" r="125" fill="transparent" stroke="#484848"
+                                            stroke-width="2" stroke-dasharray="320, 80, 320, 80"
+                                            stroke-dashoffset="270"></circle>
+
+
+                                </svg>
+                            </div>
+                            <small>ЕТАП ПЕРШИЙ</small>
+                            <h5>Знайомимось</h5>
+                        </div>
+                        <p>Зустрічаємось з вами і обговорюємо всі ваші побажання ваші побажання</p>
+                    </div>
+                </div>
+                <div class="stages-list__single-stage">
+                    <div class="single-stage__left">
+                        <p>02</p>
+                        <div class="img-container">
+                            <img class="lozad"
+                                 data-src="./img/comm-2.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="single-stage__right">
+                        <div class="circle-text">
+                            <div class="svg-abs">
+                                <svg viewBox="0 0 254 254">
+
+                                    <circle cx="127" cy="127" r="125" fill="transparent" stroke="#484848"
+                                            stroke-width="2" stroke-dasharray="320, 80, 320, 80"
+                                            stroke-dashoffset="270"></circle>
+
+
+                                </svg>
+                            </div>
+                            <small>ЕТАП другий</small>
+                            <h5>Зустрічаємось  на об'єкті  </h5>
+                        </div>
+                        <p>Приїздимо з дизайнером на об'єкт, щоб заміряти приміщення для подальшої роботи</p>
+                    </div>
+                </div>
+                <div class="stages-list__single-stage">
+                    <div class="single-stage__left">
+                        <p>03</p>
+                        <div class="img-container">
+                            <img class="lozad"
+                                 data-src="./img/comm-3.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="single-stage__right">
+                        <div class="circle-text">
+                            <div class="svg-abs">
+                                <svg viewBox="0 0 254 254">
+
+                                    <circle cx="127" cy="127" r="125" fill="transparent" stroke="#484848"
+                                            stroke-width="2" stroke-dasharray="320, 80, 320, 80"
+                                            stroke-dashoffset="270"></circle>
+
+
+                                </svg>
+                            </div>
+                            <small>ЕТАП третій</small>
+                            <h5>Підписуємо договір  та погоджуємо  кошторис </h5>
+                        </div>
+                        <p>Всі обговорені раніше зобов'язання ми фіксуємо в договорі  </p>
+                    </div>
+                </div>
+                <div class="stages-list__single-stage">
+                    <div class="single-stage__left">
+                        <p>04</p>
+                        <div class="img-container">
+                            <img class="lozad"
+                                 data-src="./img/comm-4.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="single-stage__right">
+                        <div class="circle-text">
+                            <div class="svg-abs">
+                                <svg viewBox="0 0 254 254">
+
+                                    <circle cx="127" cy="127" r="125" fill="transparent" stroke="#484848"
+                                            stroke-width="2" stroke-dasharray="320, 80, 320, 80"
+                                            stroke-dashoffset="270"></circle>
+
+
+                                </svg>
+                            </div>
+                            <small>ЕТАП четвертий</small>
+                            <h5>Погоджуємо  план </h5>
+                        </div>
+                        <p>Затверджуємо з вами всі креслення та починаємо реалізувати проекту</p>
+                    </div>
+                </div>
+                <div class="stages-list__single-stage">
+                    <div class="single-stage__left">
+                        <p>05</p>
+                        <div class="img-container">
+                            <img class="lozad"
+                                 data-src="./img/comm-5.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="single-stage__right">
+                        <div class="circle-text">
+                            <div class="svg-abs">
+                                <svg viewBox="0 0 254 254">
+
+                                    <circle cx="127" cy="127" r="125" fill="transparent" stroke="#484848"
+                                            stroke-width="2" stroke-dasharray="320, 80, 320, 80"
+                                            stroke-dashoffset="270"></circle>
+
+
+                                </svg>
+                            </div>
+                            <small>ЕТАП П’ЯТИЙ</small>
+                            <h5>Реалізація проекту </h5>
+                        </div>
+                        <p>Ви приймаєте роботу та задоволені результатом!
+                        </p>
+                    </div>
+                </div>
+                <div class="stages-list__single-stage">
+                    <div class="single-stage__left">
+                        <p>06</p>
+                        <div class="img-container">
+                            <img class="lozad"
+                                 data-src="./img/comm-6.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="single-stage__right">
+                        <div class="circle-text">
+                            <div class="svg-abs">
+                                <svg viewBox="0 0 254 254">
+
+                                    <circle cx="127" cy="127" r="125" fill="transparent" stroke="#484848"
+                                            stroke-width="2" stroke-dasharray="320, 80, 320, 80"
+                                            stroke-dashoffset="270"></circle>
+
+
+                                </svg>
+                            </div>
+                            <small>ЕТАП шостий</small>
+                            <h5>Здача об'єкту </h5>
+                        </div>
+                        <p>Ви приймаєте роботу та задоволені результатом!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="farba-main__farba-advices  farba-main__farba-advices--comm-1 trigger-2">
+        <div class="container">
+            <div class="farba-advices__container el-triggered">
+                <p><small>Прорахунок</small></p>
+                <h5>Ми можемо зробити попередній розрахунок вартості дизайну </h5>
+
+                <a href="#" class="link link--orange open-modal-btn modal--get-miscount">Залишити заявку на
+                    прорахунок</a>
+            </div>
+        </div>
+
+    </section>
+    <section class="farba-main__gallery">
+        <div class="container">
+            <div class="work-stages__container">
+                <div class="farba-titled-block el-triggered">
+                    <h2>Наші роботи можна подивитись тут</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="gallery__container">
+            <div class="gallery__slider">
+                <div class="gallery__slider--container">
+                    <div class="gallery__line">
+                        <div class="img-container">
+                            <img src="./img/gallery-1.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/gallery-2.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/gallery-3.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/gallery-4.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="gallery__line">
+                        <div class="img-container">
+                            <img src="./img/gallery-2.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/gallery-4.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/gallery-1.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/gallery-3.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="gallery__line">
+                        <div class="img-container">
+                            <img src="./img/gallery-4.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/gallery-3.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/gallery-2.jpg" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/gallery-1.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="gallery-btn">
+                <div class="svg-abs">
+                    <svg viewBox="0 0 254 254">
+
+                        <circle cx="127" cy="127" r="125" fill="transparent" stroke="#ffffff"
+                                stroke-width="2" stroke-dasharray="320, 80, 320, 80"
+                                stroke-dashoffset="270"></circle>
+
+
+                    </svg>
+
+                </div>
+                <p>Дивитися галерею робіт</p>
+
+            </a>
+        </div>
+
+
+    </section>
+    <section class="farba-main__farba-advices  farba-main__farba-advices--comm-2 trigger-2">
+        <div class="container">
+            <div class="farba-advices__container el-triggered">
+                <h5>Ми можемо зробити попередній розрахунок вартості дизайну </h5>
+<p>Комерційна площа часто потребує адаптацію проекту під майбутній вид бізнесу. Ми пропонуємо нашим клієнтам послуги по документальному оформленню будь-яких необхідних змін.
+
+
+</p>
+                <a href="#" class="link link--orange open-modal-btn modal--get-contact-us">Замовити консультацію</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="farba-main__simple-block trigger" id="farba-welcome">
+        <div class="container">
+            <div class="simple-block__container">
+                <div class="simple-block__img el-triggered">
+                    <img class="lozad" data-src="./img/farba-team.png" alt="Team">
+                </div>
+
+                <div class="simple-block__text-part el-triggered">
+                    <h3>Вітаємо!</h3>
+                    <p>Ми - студія дизайну та ремонту FARBA. Якщо ви тут, ми можемо передбачити, що зараз ви створюєте
+                        новий простір для себе або свого бізнесу. І напевне, вам потрібна надійна команда, яка допоможе
+                        з втіленням задуманого.
+                    </p>
+                    <a class="link" href="#">Детальніше про нас</a>
+                </div>
+            </div>
+        </div>
+        <div class="farba-svg-bg el-triggered">
+            <img class="lozad" data-src="./img/farba-type2.gif" alt="" loop="false"/>
+        </div>
+    </section>
+    <section class="farba-main__check-other">
+        <div class="container">
+            <div class="work-stages__container">
+                <div class="farba-titled-block el-triggered">
+                    <h2>Додаткові послуги, які вам <br>
+                        можуть бути цікаві:
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="check-other__links">
+            <a href="#">
+                <div><img class="lozad" data-src="./img/links-1.jpg" alt=""></div>
+                <p>Дизайн інтер’єру</p>
+
+            </a>
+            <a href="#">
+                <div><img class="lozad" data-src="./img/links-2.jpg" alt=""></div>
+                <p>Проектно-технічна  документація</p>
+            </a>
+
+            <a href="#">
+                <div><img class="lozad" data-src="./img/links-3.jpg" alt=""></div>
+                <p>Пакети послуг </p>
+            </a>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <div class="container">
+            <div class="contact-us__container">
+                <div class="about-farba-details__title">
+                    <h5>Зв’яжіться з нами</h5>
+                    <p>Farba - це професійні консультанти, які з радістю нададуть вам усю необхідну інформацію. Залиште ваші контактні дані у формі та наш менеджер зв’яжеться з вами у найближчий час для з’ясування деталей
+                    </p>
+                </div>
+                <form action="">
+                    <label for="form-name">
+                        <input type="text" id="form-name" required placeholder=" ">
+                        <span>Ім'я</span>
+                    </label>
+                    <label for="form-tel">
+                        <input  id="form-tel" type="tel" name="tel"
+                                pattern="+38([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder=" ">
+                        <span>Телефон</span>
+                    </label>
+    
+                    <label for="form-text">
+                        <textarea id="form-text" placeholder=" "></textarea>
+    
+                        <span>Ваше запитання</span>
+                    </label>
+                    <button class="link--orange link">Надіслати</button>
+                </form>
+            </div>
+        </div>
+    
+    </section>
+    <footer class="farba-footer">
+        <section class="farba-footer__top-side">
+            <div class="container">
+    
+                <div class="farba-footer__info-block">
+                    <h2>
+                        Ми завжди раді вашим зверненням!
+                    </h2>
+                    <div>
+                        <nav>
+                            <h6>телефон</h6>
+                            <ul>
+                                <li><a href="tel:+380672697894">+38 067 269 78 94 </a></li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <h6>e-mail</h6>
+                            <ul>
+                                <li><a href="mailto:infofarbaua@gmail.com">infofarbaua@gmail.com</a></li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <h6>адреса</h6>
+                            <ul>
+                                <li>Київ, вул. Тестувальна 21</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        <section class="farba-footer__bottom-side">
+            <img src="./img/logo-footer.png" alt="Farba">
+            <div class="container">
+                <div class="farba-footer__copyright">
+                    <p>2015-2021 © Всі права захищені</p>
+                    <a href="https://demiweb.pro">
+                        Розробка сайту <img src="./img/demiweb-logo.png" alt="Demiweb">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <section class="contact-us modal-window modal-window--contact-us">
+        <div class="close-modal-window"></div>
+        <div class="container">
+            <div class="contact-us__container">
+                <div class="about-farba-details__title">
+                    <h5>Зв’яжіться з нами</h5>
+                    <p>Farba - це професійні консультанти, які з радістю нададуть вам усю необхідну інформацію. Залиште ваші контактні дані у формі та наш менеджер зв’яжеться з вами у найближчий час для з’ясування деталей
+                    </p>
+                </div>
+                <form action="">
+                    <label for="form-name3">
+                        <input type="text" id="form-name3" required  placeholder=" ">
+                        <span>Ім'я</span>
+                    </label>
+                    <label for="form-tel3">
+                        <input  id="form-tel3" type="tel" name="tel"
+                                 required placeholder=" ">
+                        <span>Телефон</span>
+                    </label>
+    
+                    <label for="form-text3">
+                        <textarea id="form-text3" placeholder=" "></textarea>
+    
+                        <span>Ваше запитання</span>
+                    </label>
+                    <button class="link--orange link">Надіслати</button>
+                </form>
+            </div>
+        </div>
+    
+    </section>
+    <section class="contact-us modal-window modal-window--miscount">
+        <div class="close-modal-window"></div>
+    
+        <div class="container">
+            <div class="contact-us__container">
+                <div class="about-farba-details__title">
+                    <h5>Заявка на прорахунок</h5>
+                    <p>Farba - це професійні консультанти, які з радістю нададуть вам усю необхідну інформацію. Залиште ваші контактні дані у формі та наш менеджер зв’яжеться з вами у найближчий час для з’ясування деталей
+                    </p>
+                </div>
+                <form action="">
+                    <label for="form-name2">
+                        <input type="text" id="form-name2" required placeholder=" ">
+                        <span>Ім'я</span>
+                    </label>
+                    <label for="form-tel2">
+                        <input  id="form-tel2" type="tel" name="tel"
+                                 required placeholder=" ">
+                        <span>Телефон</span>
+                    </label>
+    
+                    <div class="select-type">
+                        <span>Оберіть послугу</span>
+                        <select name="name" id="select-id">
+                            <option value="1">Послуга 1</option>
+                            <option value="2">Послуга 2</option>
+                            <option value="3">Послуга 3</option>
+                            <option value="4">Послуга 4</option>
+                        </select>
+                        <div class="custom-selector">
+                        </div>
+                    </div>
+                    <button class="link--orange link">Отримати прорахунок</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--scripts start-->
+<script type="text/javascript" src="./js/plugins/helloConsole.js"></script>
+<script type="text/javascript" src="./js/header.js"></script>
+<script type="text/javascript" src="./js/plugins/loadingImg.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="./js/plugins/mainGsap.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./js/plugins/slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/plugins/slider-images.js"></script>
+
+<script type="text/javascript" src="./js/plugins/controls.js"></script>
+<script type="text/javascript" src="./js/plugins/modals.js"></script>
+
+<!--scripts end-->
+</body>
+</html>
