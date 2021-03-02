@@ -10,9 +10,9 @@
 <body>
 //= details/header.html
 
-<main class="farba-main farba-main--full-page">
+<main class="farba-main farba-main--full-page" id="full-page">
 
-    <section class="farba-main__farba-main-title full-page-block">
+    <section class="section farba-main__farba-main-title full-page-block">
         <img class="lozad"
              data-src="./img/tech-1.png"
              alt="">
@@ -60,7 +60,7 @@
 
 
     </section>
-    <section class="full-page-block farba-pack farba-pack--orange">
+    <section class="section full-page-block farba-pack farba-pack--orange">
         <div class="container-full">
             <div class="content">
                 <div class="farba-pack__left-side">
@@ -87,14 +87,14 @@
                 </div>
                 <div class="farba-pack__right-side">
                     <div class="img">
-                        <img src="./img/orange-pack.png" alt="">
+                        <img src="./img/orange-pack-3.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
     </section>
-    <section class="full-page-block farba-pack farba-pack--red">
+    <section class="section full-page-block farba-pack farba-pack--red">
         <div class="container-full">
             <div class="content">
                 <div class="farba-pack__left-side">
@@ -129,7 +129,7 @@
         </div>
 
     </section>
-    <section class="full-page-block farba-pack farba-pack--grey">
+    <section class="section full-page-block farba-pack farba-pack--grey">
         <div class="container-full">
             <div class="content">
                 <div class="farba-pack__left-side">
@@ -166,14 +166,14 @@
         </div>
 
     </section>
-    <section class="full-page-block farba-pack farba-pack--silver">
+    <section class="section full-page-block farba-pack farba-pack--silver">
         <div class="container-full">
             <div class="content">
                 <div class="farba-pack__left-side">
                     <div class="pack-type">
                         Для комерційних клієнтів
                     </div>
-                    <p>для площі від 150 м<sup>2</sup></p>
+                    <p class="pack-comm">для площі від 220 м2 знижка –  <strong>5%</strong>  на комплекс</p>
                     <h4>Пакет <strong>«silver»</strong></h4>
                     <p><small>Що ви отримаєте:</small></p>
                     <ul>
@@ -204,14 +204,15 @@
         </div>
 
     </section>
-    <section class="full-page-block farba-pack farba-pack--gold">
+    <section class="section full-page-block farba-pack farba-pack--gold">
         <div class="container-full">
             <div class="content">
                 <div class="farba-pack__left-side">
                     <div class="pack-type">
                         Для комерційних клієнтів
                     </div>
-                    <p>для площі від 150 м<sup>2</sup></p>
+                    <p class="pack-comm">для площі від 350 м2 знижка –  <strong>10%</strong>  на комплекс послуг</p>
+
                     <h4>Пакет <strong>«gold»</strong></h4>
                     <p><small>Що ви отримаєте:</small></p>
                     <ul>
@@ -241,9 +242,107 @@
         </div>
 
     </section>
+    <section class="section full-page-block full-page-block--scroll">
+        <section class="farba-main__farba-advices  farba-main__farba-advices--proposal trigger-2">
+            <div class="container">
+                <div class="farba-advices__container el-triggered">
+                    <p><small>Пропонуємо</small></p>
+                    <h5>Індивідуальні  умови співпраці</h5>
+                    <p>Також ви можете обрати необхідні послуги із запропонованих і ми запропонуємо вам індивідуальні умови співпраці
 
-    //= details/contact-us.html
-    //= details/footer.html
+                    </p>
+                    <a href="#" class="link link--orange open-modal-btn modal--get-proposal">Отримати індивідуальні умови співпраці</a>
+                </div>
+                <div class="farba-proposal">
+                    <div>
+                        <h5>Об’єкт</h5>
+                        <ul>
+                            <li>
+                                <label for="object-1">
+                                    <input type="radio" name="object" id="object-1" checked>
+                                    <span>Квартира або будинок</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="object-2">
+                                    <input type="radio" name="object" id="object-2">
+                                    <span>комерційне приміщення</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Площа</h5>
+                        <label for="square">
+                            <input type="text" id="square" name="square" placeholder="Вкажіть загальну площу (м2) ">
+                        </label>
+                    </div>
+                    <div>
+                        <h5>Перелік послуг</h5>
+                        <ul>
+                            <li>
+                                <label for="service-1">
+                                    <input type="radio" name="service" id="service-1" checked>
+                                    <span>дизайн інтер'єру  </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-2">
+                                    <input type="radio" name="service" id="service-2">
+                                    <span>проектно-технічна  <br>документація </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-3">
+                                    <input type="radio" name="service" id="service-3">
+                                    <span>ремонтні роботи під ключ   </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-4">
+                                    <input type="radio" name="service" id="service-4">
+                                    <span>облаштування меблями    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-5">
+                                    <input type="radio" name="service" id="service-5">
+                                    <span>клінінг    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-6">
+                                    <input type="radio" name="service" id="service-6">
+                                    <span>післяремонтне  <br>обслуговування    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-7">
+                                    <input type="radio" name="service" id="service-7">
+                                    <span>елементи декору  <br>власного виробництва    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-8">
+                                    <input type="radio" name="service" id="service-8">
+                                    <span>Системи вентиляції    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+        //= details/contact-us.html
+        //= details/footer.html
+    </section>
+
+
+
     //= details/modal-windows.html
 </main>
 

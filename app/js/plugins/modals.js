@@ -1,7 +1,9 @@
 let modalMiscount = 'miscount';
 let modalContactUs = 'contact-us';
+let modalProposal = 'proposal';
 let btnModalMiscount = [...document.querySelectorAll(`.modal--get-${modalMiscount}`)];
 let btnModalContactUs = [...document.querySelectorAll(`.modal--get-${modalContactUs}`)];
+let btnModalProposal = [...document.querySelectorAll(`.modal--get-${modalProposal}`)];
 let btnModalClose = [...document.querySelectorAll('.close-modal-window')];
 let allModalsBtns = [...document.querySelectorAll('.open-modal-btn')]
 function openModalWindow(item, name){
@@ -25,7 +27,7 @@ function checkIfPageHaveModals() {
             btn.addEventListener('click', () => {
                 closeModalWindow(btn);
             })
-        })
+        });
 
 
         btnModalMiscount.forEach((btn) => {
@@ -34,11 +36,17 @@ function checkIfPageHaveModals() {
                 openModalWindow(btn, modalMiscount);
             })
 
-        })
+        });
         btnModalContactUs.forEach((btn) => {
             btn.addEventListener('click', (event) => {
                 event.preventDefault();
                 openModalWindow(btn, modalContactUs);
+            })
+        });
+        btnModalProposal.forEach((btn) => {
+            btn.addEventListener('click', (event) => {
+                event.preventDefault();
+                openModalWindow(btn, modalProposal);
             })
         })
     }
@@ -104,6 +112,33 @@ window.onload = () => {
     ifOpenMoreBtnOnPage();
     checkIfPageHaveModals();
     ifSelectTypeOnPage();
+};
+
+new fullpage('#full-page', {
+    //options here
+    autoScrolling: true,
+    scrollHorizontally: true,
+    verticalCentered: false,
+    css3: true,
+    responsiveWidth: 1025,
+});
+let nonScrollFull = document.querySelector('.full-page-block.full-page-block--scroll');
+let nonFirstBlock = document.querySelector('.full-page-block.full-page-block--scroll .farba-main__farba-advices--proposal');
+function checkTopDistance(e) {
+    let toTopDis = nonFirstBlock.getBoundingClientRect().bottom - (nonFirstBlock.getBoundingClientRect().bottom - nonFirstBlock.getBoundingClientRect().top);
+    if (toTopDis !== 0) {
+        e.stopPropagation();
+    }
 }
+document.querySelector('.full-page-block.full-page-block--scroll').onwheel = (e) => {
+    // e.stopPropagation();
+    console.log(e.deltaY);
+    let next;
+    checkTopDistance(e);
+    console.log(next);
+}
+
+//methods
+// fullpage_api.setAllowScrolling(false);
 
 

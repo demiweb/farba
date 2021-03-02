@@ -8,6 +8,7 @@
     <!--start styles-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css" integrity="sha512-hGBKkjAVJUXoImyDezOKpzuY4LS1eTvJ4HTC/pbxn47x5zNzGA1vi3vFQhhOehWLTNHdn+2Yqh/IRNPw/8JF/A==" crossorigin="anonymous" />
     <script src="//cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
@@ -132,9 +133,9 @@
 
 </header>
 
-<main class="farba-main farba-main--full-page">
+<main class="farba-main farba-main--full-page" id="full-page">
 
-    <section class="farba-main__farba-main-title full-page-block">
+    <section class="section farba-main__farba-main-title full-page-block">
         <img class="lozad"
              data-src="./img/tech-1.png"
              alt="">
@@ -182,7 +183,7 @@
 
 
     </section>
-    <section class="full-page-block farba-pack farba-pack--orange">
+    <section class="section full-page-block farba-pack farba-pack--orange">
         <div class="container-full">
             <div class="content">
                 <div class="farba-pack__left-side">
@@ -209,14 +210,14 @@
                 </div>
                 <div class="farba-pack__right-side">
                     <div class="img">
-                        <img src="./img/orange-pack.png" alt="">
+                        <img src="./img/orange-pack-3.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
     </section>
-    <section class="full-page-block farba-pack farba-pack--red">
+    <section class="section full-page-block farba-pack farba-pack--red">
         <div class="container-full">
             <div class="content">
                 <div class="farba-pack__left-side">
@@ -251,7 +252,7 @@
         </div>
 
     </section>
-    <section class="full-page-block farba-pack farba-pack--grey">
+    <section class="section full-page-block farba-pack farba-pack--grey">
         <div class="container-full">
             <div class="content">
                 <div class="farba-pack__left-side">
@@ -288,14 +289,14 @@
         </div>
 
     </section>
-    <section class="full-page-block farba-pack farba-pack--silver">
+    <section class="section full-page-block farba-pack farba-pack--silver">
         <div class="container-full">
             <div class="content">
                 <div class="farba-pack__left-side">
                     <div class="pack-type">
                         Для комерційних клієнтів
                     </div>
-                    <p>для площі від 150 м<sup>2</sup></p>
+                    <p class="pack-comm">для площі від 220 м2 знижка –  <strong>5%</strong>  на комплекс</p>
                     <h4>Пакет <strong>«silver»</strong></h4>
                     <p><small>Що ви отримаєте:</small></p>
                     <ul>
@@ -326,14 +327,15 @@
         </div>
 
     </section>
-    <section class="full-page-block farba-pack farba-pack--gold">
+    <section class="section full-page-block farba-pack farba-pack--gold">
         <div class="container-full">
             <div class="content">
                 <div class="farba-pack__left-side">
                     <div class="pack-type">
                         Для комерційних клієнтів
                     </div>
-                    <p>для площі від 150 м<sup>2</sup></p>
+                    <p class="pack-comm">для площі від 350 м2 знижка –  <strong>10%</strong>  на комплекс послуг</p>
+
                     <h4>Пакет <strong>«gold»</strong></h4>
                     <p><small>Що ви отримаєте:</small></p>
                     <ul>
@@ -363,81 +365,179 @@
         </div>
 
     </section>
-
-    <section class="contact-us">
-        <div class="container">
-            <div class="contact-us__container">
-                <div class="about-farba-details__title">
-                    <h5>Зв’яжіться з нами</h5>
-                    <p>Farba - це професійні консультанти, які з радістю нададуть вам усю необхідну інформацію. Залиште ваші контактні дані у формі та наш менеджер зв’яжеться з вами у найближчий час для з’ясування деталей
-                    </p>
-                </div>
-                <form action="">
-                    <label for="form-name">
-                        <input type="text" id="form-name" required placeholder=" ">
-                        <span>Ім'я</span>
-                    </label>
-                    <label for="form-tel">
-                        <input  id="form-tel" type="tel" name="tel"
-                                pattern="+38([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder=" ">
-                        <span>Телефон</span>
-                    </label>
-    
-                    <label for="form-text">
-                        <textarea id="form-text" placeholder=" "></textarea>
-    
-                        <span>Ваше запитання</span>
-                    </label>
-                    <button class="link--orange link">Надіслати</button>
-                </form>
-            </div>
-        </div>
-    
-    </section>
-    <footer class="farba-footer">
-        <section class="farba-footer__top-side">
+    <section class="section full-page-block full-page-block--scroll">
+        <section class="farba-main__farba-advices  farba-main__farba-advices--proposal trigger-2">
             <div class="container">
-    
-                <div class="farba-footer__info-block">
-                    <h2>
-                        Ми завжди раді вашим зверненням!
-                    </h2>
+                <div class="farba-advices__container el-triggered">
+                    <p><small>Пропонуємо</small></p>
+                    <h5>Індивідуальні  умови співпраці</h5>
+                    <p>Також ви можете обрати необхідні послуги із запропонованих і ми запропонуємо вам індивідуальні умови співпраці
+
+                    </p>
+                    <a href="#" class="link link--orange open-modal-btn modal--get-proposal">Отримати індивідуальні умови співпраці</a>
+                </div>
+                <div class="farba-proposal">
                     <div>
-                        <nav>
-                            <h6>телефон</h6>
-                            <ul>
-                                <li><a href="tel:+380672697894">+38 067 269 78 94 </a></li>
-                            </ul>
-                        </nav>
-                        <nav>
-                            <h6>e-mail</h6>
-                            <ul>
-                                <li><a href="mailto:infofarbaua@gmail.com">infofarbaua@gmail.com</a></li>
-                            </ul>
-                        </nav>
-                        <nav>
-                            <h6>адреса</h6>
-                            <ul>
-                                <li>Київ, вул. Тестувальна 21</li>
-                            </ul>
-                        </nav>
+                        <h5>Об’єкт</h5>
+                        <ul>
+                            <li>
+                                <label for="object-1">
+                                    <input type="radio" name="object" id="object-1" checked>
+                                    <span>Квартира або будинок</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="object-2">
+                                    <input type="radio" name="object" id="object-2">
+                                    <span>комерційне приміщення</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Площа</h5>
+                        <label for="square">
+                            <input type="text" id="square" name="square" placeholder="Вкажіть загальну площу (м2) ">
+                        </label>
+                    </div>
+                    <div>
+                        <h5>Перелік послуг</h5>
+                        <ul>
+                            <li>
+                                <label for="service-1">
+                                    <input type="radio" name="service" id="service-1" checked>
+                                    <span>дизайн інтер'єру  </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-2">
+                                    <input type="radio" name="service" id="service-2">
+                                    <span>проектно-технічна  <br>документація </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-3">
+                                    <input type="radio" name="service" id="service-3">
+                                    <span>ремонтні роботи під ключ   </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-4">
+                                    <input type="radio" name="service" id="service-4">
+                                    <span>облаштування меблями    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-5">
+                                    <input type="radio" name="service" id="service-5">
+                                    <span>клінінг    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-6">
+                                    <input type="radio" name="service" id="service-6">
+                                    <span>післяремонтне  <br>обслуговування    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-7">
+                                    <input type="radio" name="service" id="service-7">
+                                    <span>елементи декору  <br>власного виробництва    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="service-8">
+                                    <input type="radio" name="service" id="service-8">
+                                    <span>Системи вентиляції    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+        <section class="contact-us">
+            <div class="container">
+                <div class="contact-us__container">
+                    <div class="about-farba-details__title">
+                        <h5>Зв’яжіться з нами</h5>
+                        <p>Farba - це професійні консультанти, які з радістю нададуть вам усю необхідну інформацію. Залиште ваші контактні дані у формі та наш менеджер зв’яжеться з вами у найближчий час для з’ясування деталей
+                        </p>
+                    </div>
+                    <form action="">
+                        <label for="form-name">
+                            <input type="text" id="form-name" required placeholder=" ">
+                            <span>Ім'я</span>
+                        </label>
+                        <label for="form-tel">
+                            <input  id="form-tel" type="tel" name="tel"
+                                    pattern="+38([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder=" ">
+                            <span>Телефон</span>
+                        </label>
+        
+                        <label for="form-text">
+                            <textarea id="form-text" placeholder=" "></textarea>
+        
+                            <span>Ваше запитання</span>
+                        </label>
+                        <button class="link--orange link">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        
+        </section>
+        <footer class="farba-footer">
+            <section class="farba-footer__top-side">
+                <div class="container">
+        
+                    <div class="farba-footer__info-block">
+                        <h2>
+                            Ми завжди раді вашим зверненням!
+                        </h2>
+                        <div>
+                            <nav>
+                                <h6>телефон</h6>
+                                <ul>
+                                    <li><a href="tel:+380672697894">+38 067 269 78 94 </a></li>
+                                </ul>
+                            </nav>
+                            <nav>
+                                <h6>e-mail</h6>
+                                <ul>
+                                    <li><a href="mailto:infofarbaua@gmail.com">infofarbaua@gmail.com</a></li>
+                                </ul>
+                            </nav>
+                            <nav>
+                                <h6>адреса</h6>
+                                <ul>
+                                    <li>Київ, вул. Тестувальна 21</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+        
+                </div>
+            </section>
+            <section class="farba-footer__bottom-side">
+                <img src="./img/logo-footer.png" alt="Farba">
+                <div class="container">
+                    <div class="farba-footer__copyright">
+                        <p>2015-2021 © Всі права захищені</p>
+                        <a href="https://demiweb.pro">
+                            Розробка сайту <img src="./img/demiweb-logo.png" alt="Demiweb">
+                        </a>
                     </div>
                 </div>
-    
-            </div>
-        </section>
-        <section class="farba-footer__bottom-side">
-            <img src="./img/logo-footer.png" alt="Farba">
-            <div class="container">
-                <div class="farba-footer__copyright">
-                    <p>2015-2021 © Всі права захищені</p>
-                    <a href="https://demiweb.pro">
-                        Розробка сайту <img src="./img/demiweb-logo.png" alt="Demiweb">
-                    </a>
-                </div>
-            </div>
-        </section>
-    </footer>
+            </section>
+        </footer>
+    </section>
+
+
+
     <section class="contact-us modal-window modal-window--contact-us">
         <div class="close-modal-window"></div>
         <div class="container">
@@ -506,6 +606,36 @@
             </div>
         </div>
     </section>
+    <section class="contact-us modal-window modal-window--proposal">
+        <div class="close-modal-window"></div>
+    
+        <div class="container">
+            <div class="contact-us__container">
+                <div class="about-farba-details__title">
+                    <h5>Індивідуальні умови співпраці</h5>
+                    <p>Фахівці з Farba запропонують вам індивідуальні умови співпраці виходячи з обраних вами критерієв</p>
+                </div>
+                <form action="">
+                    <label for="form-name2">
+                        <input type="text" id="form-name2" required placeholder=" ">
+                        <span>Ім'я</span>
+                    </label>
+                    <label for="form-tel2">
+                        <input  id="form-tel2" type="tel" name="tel"
+                                 required placeholder=" ">
+                        <span>Телефон</span>
+                    </label>
+                    <div class="info-proposal">
+                        <span>Об’єкт: <strong>Квартира або будинок</strong></span>
+                        <span>Послуга: <strong>Дизайн інтер’єру</strong></span>
+                        <span>Площа: <strong>до 100м<sup>2</sup></strong></span>
+    
+                    </div>
+                    <button class="link--orange link">Отримати пропозицію</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 
 <!--scripts start-->
@@ -513,11 +643,14 @@
 <script type="text/javascript" src="./js/header.js"></script>
 <script type="text/javascript" src="./js/plugins/loadingImg.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-<script src="./js/plugins/mainGsap.js"></script>
+
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./js/plugins/mainGsap.js"></script>
 <script type="text/javascript" src="./js/plugins/slick/slick.min.js"></script>
 <script type="text/javascript" src="./js/plugins/slider-images.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
+<!--<script type="text/javascript" src="./js/plugins/fullpage.extensions.min.js"></script>-->
 
 <script type="text/javascript" src="./js/plugins/controls.js"></script>
 <script type="text/javascript" src="./js/plugins/modals.js"></script>

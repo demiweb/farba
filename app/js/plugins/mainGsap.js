@@ -173,5 +173,6 @@ trigger2Element.forEach((cont, k) => {
 
     })
 
-})
+});
+
 
