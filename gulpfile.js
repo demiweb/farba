@@ -83,8 +83,8 @@ gulp.task('js:build', async function () {
 
 gulp.task('img:build', function () {
     return    gulp.src(path.src.img) // Выберем файлы по нужному пути
-        .pipe(gulp.dest(path.build.img))// Переместим их в папку build
         .pipe(imagemin())
+        .pipe(gulp.dest(path.build.img))// Переместим их в папку build
         .pipe(browserSync.stream());
 });
 

@@ -1,4 +1,4 @@
-function forTest() {
-    console.log('test test test')
-}
-forTest();
+// function forTest() {
+//     console.log('test test test')
+// }
+// forTest();

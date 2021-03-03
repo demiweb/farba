@@ -116,12 +116,34 @@ window.onload = () => {
 
 new fullpage('#full-page', {
     //options here
+
+    anchors: ['title', 'farba-pack--orange', 'farba-pack--red', 'farba-pack--grey', 'farba-pack--silver', 'farba-pack--gold', 'footer' ],
+    menu: '#menu',
+    navigation: true,
     autoScrolling: true,
-    scrollHorizontally: true,
+    // scrollHorizontally: true,
     verticalCentered: false,
     css3: true,
     responsiveWidth: 1025,
 });
+let navMenuLinksFp = [...document.querySelectorAll('#menu .menu-links')];
+function checkActiveZoneFullPage() {
+    let activeZone = document.querySelector('.menu-links.active');
+    if (activeZone.classList.contains('hide')) {
+        activeZone.closest('#menu').style.display = 'none';
+    } else {
+
+        activeZone.closest('#menu').style.display = 'flex';
+        if (activeZone.classList.contains('white')) {
+            activeZone.closest('#menu').classList.add('reverse-color');
+
+        } else {
+            activeZone.closest('#menu').classList.remove('reverse-color');
+
+        }
+
+    }
+}
 let nonScrollFull = document.querySelector('.full-page-block.full-page-block--scroll');
 let nonFirstBlock = document.querySelector('.full-page-block.full-page-block--scroll .farba-main__farba-advices--proposal');
 function checkTopDistance(e) {
@@ -130,13 +152,44 @@ function checkTopDistance(e) {
         e.stopPropagation();
     }
 }
-document.querySelector('.full-page-block.full-page-block--scroll').onwheel = (e) => {
-    // e.stopPropagation();
-    console.log(e.deltaY);
-    let next;
-    checkTopDistance(e);
-    console.log(next);
+
+// function setAnchors() {
+//     let fpBlocks = [...document.querySelectorAll('.full-page-block')];
+//
+//     fpBlocks.forEach((blc) => {
+//         let dataAnchor = blc.dataset.anchor;
+//         blc.id = `${dataAnchor}`;
+//
+//     })
+// }
+function checkFullPageBlocks() {
+    if (![...document.querySelectorAll('.full-page-block')].length) {
+
+    } else {
+        navMenuLinksFp.forEach((lnk) => {
+            var observer = new MutationObserver(function (event) {
+                checkActiveZoneFullPage();
+            })
+
+            observer.observe(lnk, {
+                attributes: true,
+                attributeFilter: ['class'],
+                childList: false,
+                characterData: false
+            })
+        })
+        document.querySelector('.full-page-block.full-page-block--scroll').onwheel = (e) => {
+            // e.stopPropagation();
+            // console.log(e.deltaY);
+            checkTopDistance(e);
+        }
+    }
 }
+
+window.onload = () => {
+    checkFullPageBlocks();
+}
+
 
 //methods
 // fullpage_api.setAllowScrolling(false);

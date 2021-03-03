@@ -83,12 +83,12 @@ const controller = new ScrollMagic.Controller();
 
 //home page animation
 gsap.fromTo('.farba-main__farba-main-title', {opacity:0}, {opacity: 1, duration: 1.2, delay: 0.4})
-gsap.fromTo('.anim-to-top', {y: -50, opacity:0}, {opacity: 1, y:0, duration: 0.7, delay: 1.0, clearProps: 'all'})
+// gsap.fromTo('.anim-to-top', {y: -50, opacity:0}, {opacity: 1, y:0, duration: 0.7, delay: 1.0, clearProps: 'all'})
 gsap.fromTo('.absolute-pos svg', {opacity:0}, {opacity: 1, duration: 1.3, delay: 0.6, clearProps: 'all'})
-gsap.fromTo('.brand-container > ul > li:first-child  p', {opacity:0, x: -60}, {opacity: 1, x: 0,duration: 0.7, delay: 1.2, clearProps: 'all'})
-gsap.fromTo('.brand-container > ul > li:last-child  p', {opacity:0, x: 70}, {opacity: 1, x: 0,duration: 0.7, delay: 1.4, clearProps: 'all'})
-gsap.fromTo('.anim-to-right', {opacity:0, x: -160}, {opacity: 1, x: 0,duration: 0.7, delay: 0.9, clearProps: 'all'})
-gsap.fromTo('.anim-to-left', {opacity:0, x: 160}, {opacity: 1, x: 0,duration: 0.7, delay: 1.1, clearProps: 'all'})
+// gsap.fromTo('.brand-container > ul > li:first-child  p', {opacity:0, x: -60}, {opacity: 1, x: 0,duration: 0.7, delay: 1.2, clearProps: 'all'})
+// gsap.fromTo('.brand-container > ul > li:last-child  p', {opacity:0, x: 70}, {opacity: 1, x: 0,duration: 0.7, delay: 1.4, clearProps: 'all'})
+// gsap.fromTo('.anim-to-right', {opacity:0, x: -160}, {opacity: 1, x: 0,duration: 0.7, delay: 0.9, clearProps: 'all'})
+// gsap.fromTo('.anim-to-left', {opacity:0, x: 160}, {opacity: 1, x: 0,duration: 0.7, delay: 1.1, clearProps: 'all'})
 
 //home page animation
 
@@ -174,5 +174,20 @@ trigger2Element.forEach((cont, k) => {
     })
 
 });
+function checkHomePageAnims() {
+    if (!document.querySelector('.anim-to-top')) {
+
+    } else {
+        gsap.fromTo('.anim-to-top', {y: -50, opacity:0}, {opacity: 1, y:0, duration: 0.7, delay: 1.0, clearProps: 'all'})
+        gsap.fromTo('.brand-container > ul > li:first-child  p', {opacity:0, x: -60}, {opacity: 1, x: 0,duration: 0.7, delay: 1.2, clearProps: 'all'})
+        gsap.fromTo('.brand-container > ul > li:last-child  p', {opacity:0, x: 70}, {opacity: 1, x: 0,duration: 0.7, delay: 1.4, clearProps: 'all'})
+        gsap.fromTo('.anim-to-right', {opacity:0, x: -160}, {opacity: 1, x: 0,duration: 0.7, delay: 0.9, clearProps: 'all'})
+        gsap.fromTo('.anim-to-left', {opacity:0, x: 160}, {opacity: 1, x: 0,duration: 0.7, delay: 1.1, clearProps: 'all'})
+
+    }
+}
+window.onload = () => {
+    checkHomePageAnims();
+}
 
 
