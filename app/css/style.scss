@@ -7063,15 +7063,22 @@ main.farba-main.farba-main--services {
     .img-container {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-end;
+      bottom: auto;
+      height: 200px;
       &::after {
+        content: none;
         background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%);
 
       }
       img {
-        object-fit: fill;
-        width: auto;
+        object-fit: cover;
+        width: 140%;
+        height: auto;
       }
+    }
+    .service-text {
+      margin-top: 180px;
     }
   }
 }

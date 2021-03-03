@@ -7570,19 +7570,26 @@ main.farba-main.farba-main--services .top-title-part__block p {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    bottom: auto;
+    height: 200px;
   }
   .service .img-container::after {
+    content: none;
     background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.1)));
     background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%);
     background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%);
   }
   .service .img-container img {
-    -o-object-fit: fill;
-    object-fit: fill;
-    width: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 140%;
+    height: auto;
+  }
+  .service .service-text {
+    margin-top: 180px;
   }
 }
 @media screen and (max-width: 575px) {
