@@ -186,6 +186,3 @@ function checkHomePageAnims() {
 
     }
 }
-window.onload = () => {
-    checkHomePageAnims();
-}

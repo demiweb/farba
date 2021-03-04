@@ -115,8 +115,8 @@ function checkMainWidth() {
     }
     // console.log(contWi.offsetWidth);
 };
-window.onload = () => {
-    checkMainWidth();
-    checkIfProjectsOnPage();
-}
+// window.onload = () => {
+//     checkMainWidth();
+//     checkIfProjectsOnPage();
+// }
 checkMainWidth();

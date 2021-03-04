@@ -108,11 +108,11 @@ function ifOpenMoreBtnOnPage() {
         })
     }
 }
-window.onload = () => {
-    ifOpenMoreBtnOnPage();
-    checkIfPageHaveModals();
-    ifSelectTypeOnPage();
-};
+// window.onload = () => {
+//     ifOpenMoreBtnOnPage();
+//     checkIfPageHaveModals();
+//     ifSelectTypeOnPage();
+// };
 
 new fullpage('#full-page', {
     //options here
@@ -187,8 +187,18 @@ function checkFullPageBlocks() {
 }
 
 window.onload = () => {
+    checkHomePageAnims();
+    checkIfProjectsOnPage();
     checkFullPageBlocks();
+    checkMainWidth();
+    ifOpenMoreBtnOnPage();
+    checkIfPageHaveModals();
+    ifSelectTypeOnPage();
 }
+
+// window.onload = () => {
+//
+// }
 
 
 //methods
