@@ -896,11 +896,21 @@ img.lozad {
     left: 0;
   }
 
+  .farba-header__submenu {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .farba-header__submenu > ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    height: auto;
   }
 
   .farba-header__submenu > ul > li {

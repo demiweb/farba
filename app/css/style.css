@@ -691,8 +691,18 @@ img.lozad {
     left: 0;
   }
 
+  .farba-header__submenu {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: flex;
+  }
+
   .farba-header__submenu > ul {
     flex-direction: column;
+    height: auto;
   }
 
   .farba-header__submenu > ul > li {
