@@ -194,6 +194,7 @@ window.onload = () => {
     ifOpenMoreBtnOnPage();
     checkIfPageHaveModals();
     ifSelectTypeOnPage();
+
 }
 
 // window.onload = () => {
