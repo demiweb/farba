@@ -6098,8 +6098,8 @@ li.slick-slide:nth-child(even) {
 }
 
 .farba-main__farba-advices.farba-main__farba-advices--repair {
-  background: url("../img/repair-big-1.jpg") no-repeat center right;
-  background-size: cover;
+  background: url("../img/repair-big-1.jpg") no-repeat center right, #dfdfe3;
+  background-size: contain;
   padding: 120px 0;
 }
 @media screen and (max-width: 768px) {
