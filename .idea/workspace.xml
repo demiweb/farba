@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="976fa361-2dca-479d-8ea4-dc17bae3f3e2" name="Default Changelist" comment="">
+    <list default="true" id="976fa361-2dca-479d-8ea4-dc17bae3f3e2" name="Default Changelist" comment="projects page, contacts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/plugins/slider-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/plugins/slider-images.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/plugins/slider-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/plugins/slider-images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/plugins/loadingImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/plugins/loadingImg.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -43,6 +37,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projectsWebStorm\farba-wp\farba-ws\app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projectsWebStorm\farba-wp\farba-ws\app\css" />
       <recent name="D:\projectsWebStorm\farba-wp\farba-ws\app\details" />
@@ -64,7 +61,30 @@
       <workItem from="1612857382757" duration="19399000" />
       <workItem from="1612944908909" duration="16011000" />
       <workItem from="1613029073536" duration="19594000" />
-      <workItem from="1613115658714" duration="15779000" />
+      <workItem from="1613115658714" duration="16033000" />
+      <workItem from="1613376287709" duration="2999000" />
+      <workItem from="1613461285178" duration="24809000" />
+      <workItem from="1613547032619" duration="11385000" />
+      <workItem from="1613634836420" duration="8148000" />
+      <workItem from="1613990047308" duration="1175000" />
+      <workItem from="1613991508482" duration="1183000" />
+      <workItem from="1614070737485" duration="21347000" />
+      <workItem from="1614240057423" duration="18147000" />
+      <workItem from="1614586340339" duration="22170000" />
+      <workItem from="1614676245540" duration="21116000" />
+      <workItem from="1614757410641" duration="22706000" />
+      <workItem from="1614844374592" duration="2962000" />
+      <workItem from="1614930609297" duration="5830000" />
+      <workItem from="1615557813044" duration="1086000" />
+      <workItem from="1615886197901" duration="9058000" />
+      <workItem from="1617715850596" duration="954000" />
+      <workItem from="1617717200592" duration="199000" />
+      <workItem from="1617720704550" duration="209000" />
+      <workItem from="1617802535310" duration="708000" />
+      <workItem from="1618409900083" duration="85000" />
+      <workItem from="1618576154735" duration="149000" />
+      <workItem from="1621512569291" duration="71000" />
+      <workItem from="1621602945115" duration="762000" />
     </task>
     <task id="LOCAL-00001" summary="768">
       <created>1612541799098</created>
@@ -129,7 +149,98 @@
       <option name="project" value="LOCAL" />
       <updated>1613135597519</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="projects page, contacts">
+      <created>1613147469208</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1613147469208</updated>
+    </task>
+    <task id="LOCAL-00011" summary="interior design">
+      <created>1614095901117</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614095901117</updated>
+    </task>
+    <task id="LOCAL-00012" summary="tech, packs pages">
+      <created>1614616129673</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614616129673</updated>
+    </task>
+    <task id="LOCAL-00013" summary="packs fullpage scroll">
+      <created>1614701605906</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614701605906</updated>
+    </task>
+    <task id="LOCAL-00014" summary="404, services, packs">
+      <created>1614780327157</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614780327157</updated>
+    </task>
+    <task id="LOCAL-00015" summary="page list update">
+      <created>1614780367325</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614780367325</updated>
+    </task>
+    <task id="LOCAL-00016" summary="submenu try">
+      <created>1614786894994</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614786894994</updated>
+    </task>
+    <task id="LOCAL-00017" summary="projects page, contacts">
+      <created>1614789564666</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614789564666</updated>
+    </task>
+    <task id="LOCAL-00018" summary="projects page, contacts">
+      <created>1614789640773</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1614789640773</updated>
+    </task>
+    <task id="LOCAL-00019" summary="projects page, contacts">
+      <created>1614850066618</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1614850066618</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix scripts">
+      <created>1614850753296</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614850753296</updated>
+    </task>
+    <task id="LOCAL-00021" summary="some correctives">
+      <created>1614933866337</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1614933866337</updated>
+    </task>
+    <task id="LOCAL-00022" summary="bg picture">
+      <created>1614934345611</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1614934345611</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,32 +254,54 @@
     <MESSAGE value="style background-image: gradient" />
     <MESSAGE value="transparent = rgba(255, 255, 255, 0)" />
     <MESSAGE value="inline-flex, block, for gradient text" />
-    <option name="LAST_COMMIT_MESSAGE" value="inline-flex, block, for gradient text" />
+    <MESSAGE value="interior design" />
+    <MESSAGE value="tech, packs pages" />
+    <MESSAGE value="packs fullpage scroll" />
+    <MESSAGE value="404, services, packs" />
+    <MESSAGE value="page list update" />
+    <MESSAGE value="submenu try" />
+    <MESSAGE value="projects page, contacts" />
+    <MESSAGE value="fix scripts" />
+    <MESSAGE value="some correctives" />
+    <MESSAGE value="bg picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="bg picture" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1613135596532">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613570690834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1613135596532" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613570690834" />
+    <state x="422" y="116" key="CommitChangelistDialog2" timestamp="1614934342291">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="422" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1614934342291" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1614789583631">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614789583631" />
     <state x="1109" y="302" key="EditFileWatcherDialog" timestamp="1612434470241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1109" y="302" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612434470241" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1612964405362">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1613382853006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612964405362" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1613135600994">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1613382853006" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1614934365317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613135600994" />
-    <state x="559" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1612442760956">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614934365317" />
+    <state x="559" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1614606636311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="559" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612442760956" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1612534266479">
+    <state x="559" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1614606636311" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1614788662028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612534266479" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614788662028" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614776895177">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614776895177" />
   </component>
 </project>
